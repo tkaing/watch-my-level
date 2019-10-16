@@ -8,7 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUp" customModule="watch_my_level" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUp" customModule="watch_my_level" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="pFd-Bt-FKv" id="HTk-tE-FYx"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pFd-Bt-FKv">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -63,6 +67,7 @@
                     </state>
                 </button>
             </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="X9b-Q9-tJJ" firstAttribute="leading" secondItem="a6g-kK-bTx" secondAttribute="leading" constant="50" id="419-ke-f4H"/>
                 <constraint firstItem="geI-W8-XHg" firstAttribute="leading" secondItem="a6g-kK-bTx" secondAttribute="leading" constant="75" id="5fS-Ht-eaS"/>
