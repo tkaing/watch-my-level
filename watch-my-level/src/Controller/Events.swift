@@ -13,11 +13,7 @@ class Events: UIViewController {
     
     @IBOutlet var table: UITableView!
     
-    public var items: [Event] = [
-        Event(name: "event 001"),
-        Event(name: "event 002"),
-        Event(name: "event 003")
-    ]
+    public var items: [String] = []
     
     public var cellID = "cellID"
     
@@ -94,7 +90,7 @@ extension Events: UITableViewDelegate, UITableViewDataSource {
     // Cell Content
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell? = self.table.dequeueReusableCell(withIdentifier: self.cellID)
-        let name: String = self.items[indexPath.row].name
+        let name: String = self.items[indexPath.row]
         print(name)
         cell?.textLabel?.text = name
         return cell!
