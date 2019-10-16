@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import SideMenu
 
 class Menu: UIViewController {
 
-    @IBOutlet var BT_IG_logo: UIButton!
-    
+    @IBOutlet var BT_IG_SYM: UIButton!
     @IBOutlet var BT_IC_001: UIButton!
     @IBOutlet var BT_IC_002: UIButton!
     @IBOutlet var BT_IC_003: UIButton!
@@ -19,30 +19,57 @@ class Menu: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         self.initView()
     }
+    
+    // View Redirection
+    
+    // ----------------
+    
+    // Menu Redirection
+    @IBAction func BT_IG_SYM(_ sender: UIButton) {
+        self.redirectTo(from: self, to: Home())
+    }
+    @IBAction func BT_TX_001(_ sender: UIButton) {
+        self.redirectTo(from: self, to: Home())
+    }
+    @IBAction func BT_TX_002(_ sender: UIButton) {
+        self.redirectTo(from: self, to: Events())
+    }
+    @IBAction func BT_TX_003(_ sender: UIButton) {
+        self.redirectTo(from: self, to: Home())
+    }
+    @IBAction func BT_TX_004(_ sender: UIButton) {
+        self.redirectTo(from: self, to: Home())
+    }
+}
 
+// Menu Extension
+extension Menu {
+    
+    func redirectTo(from: UIViewController, to: UIViewController) {
+        
+        let mm = MenuManager()
+        
+        mm.redirectTo(from: from, to: to)
+    }
+}
+
+// Front Extension
+extension Menu {
+    
     func initView() {
         
-        // >>> logo
-        self.setImage(BT: self.BT_IG_logo, named: "augarde.png")
-        
-        // >>> icons
-        self.setImage(BT: self.BT_IC_001, named: "game.png")
-        self.setImage(BT: self.BT_IC_002, named: "calendar.png")
-        self.setImage(BT: self.BT_IC_003, named: "about-us.png")
-        self.setImage(BT: self.BT_IC_004, named: "logout.png")
+        // ST Front
+        self.setImage(BT: self.BT_IG_SYM)
+        self.setImage(BT: self.BT_IC_001)
+        self.setImage(BT: self.BT_IC_002)
+        self.setImage(BT: self.BT_IC_003)
+        self.setImage(BT: self.BT_IC_004)
     }
     
-    func setImage(BT: UIButton, named: String) {
+    func setImage(BT: UIButton) {
         
-        let IG = UIImage(named: named) as UIImage?
-        BT.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-        BT.setImage(IG, for: .normal)
-        BT.tintColor = UIColor.black
         BT.imageView?.contentMode = .scaleAspectFit
-        BT.addTarget(self, action: "btnTouched:", for: .touchUpInside)
     }
 }

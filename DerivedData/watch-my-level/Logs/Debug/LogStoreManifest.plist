@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>099F4299-59BA-4C8F-8496-318B3F0A172A</key>
+		<key>B5E132E4-12BF-4DE6-9A7F-424794942DC8</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>099F4299-59BA-4C8F-8496-318B3F0A172A.xcactivitylog</string>
+			<string>B5E132E4-12BF-4DE6-9A7F-424794942DC8.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,15 +30,15 @@
 			<key>signature</key>
 			<string>Debug watch-my-level</string>
 			<key>timeStartedRecording</key>
-			<real>592911903.37808704</real>
+			<real>592927318.77598</real>
 			<key>timeStoppedRecording</key>
-			<real>592911933.78625798</real>
+			<real>592929381.10879898</real>
 			<key>title</key>
 			<string>Debug watch-my-level</string>
 			<key>uniqueIdentifier</key>
-			<string>099F4299-59BA-4C8F-8496-318B3F0A172A</string>
+			<string>B5E132E4-12BF-4DE6-9A7F-424794942DC8</string>
 		</dict>
-		<key>14B33059-5A19-402B-BDB5-FF12EB9E9D20</key>
+		<key>BF24541D-EDCA-4D08-AC59-C7DFB78F530E</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -47,7 +47,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>14B33059-5A19-402B-BDB5-FF12EB9E9D20.xcactivitylog</string>
+			<string>BF24541D-EDCA-4D08-AC59-C7DFB78F530E.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -62,15 +62,15 @@
 			<key>signature</key>
 			<string>Debug watch-my-level</string>
 			<key>timeStartedRecording</key>
-			<real>592909026.58313</real>
+			<real>592929815.66928005</real>
 			<key>timeStoppedRecording</key>
-			<real>592909210.17010999</real>
+			<real>592929846.90211201</real>
 			<key>title</key>
 			<string>Debug watch-my-level</string>
 			<key>uniqueIdentifier</key>
-			<string>14B33059-5A19-402B-BDB5-FF12EB9E9D20</string>
+			<string>BF24541D-EDCA-4D08-AC59-C7DFB78F530E</string>
 		</dict>
-		<key>18DB8A8D-464D-4629-8A62-32764CA4D73C</key>
+		<key>FB6E48B0-14C5-47C9-AAC6-375EB71BA284</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -79,7 +79,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>18DB8A8D-464D-4629-8A62-32764CA4D73C.xcactivitylog</string>
+			<string>FB6E48B0-14C5-47C9-AAC6-375EB71BA284.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -94,685 +94,13 @@
 			<key>signature</key>
 			<string>Debug watch-my-level</string>
 			<key>timeStartedRecording</key>
-			<real>592909211.18272305</real>
+			<real>592929475.04191899</real>
 			<key>timeStoppedRecording</key>
-			<real>592909834.77494502</real>
+			<real>592929815.60185206</real>
 			<key>title</key>
 			<string>Debug watch-my-level</string>
 			<key>uniqueIdentifier</key>
-			<string>18DB8A8D-464D-4629-8A62-32764CA4D73C</string>
-		</dict>
-		<key>2417D37A-6DDB-484A-B6DF-45D8151B0D05</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>2417D37A-6DDB-484A-B6DF-45D8151B0D05.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592908430.42114198</real>
-			<key>timeStoppedRecording</key>
-			<real>592908605.83522904</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>2417D37A-6DDB-484A-B6DF-45D8151B0D05</string>
-		</dict>
-		<key>30B9A12A-FE80-4995-A31B-DC8344FCD4DB</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>30B9A12A-FE80-4995-A31B-DC8344FCD4DB.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592909935.06396794</real>
-			<key>timeStoppedRecording</key>
-			<real>592911189.13757598</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>30B9A12A-FE80-4995-A31B-DC8344FCD4DB</string>
-		</dict>
-		<key>38E56CBA-2A41-464C-A805-ADDFADBFE785</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>38E56CBA-2A41-464C-A805-ADDFADBFE785.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592908932.75006998</real>
-			<key>timeStoppedRecording</key>
-			<real>592909025.53789306</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>38E56CBA-2A41-464C-A805-ADDFADBFE785</string>
-		</dict>
-		<key>4BD38DE6-279C-4A11-A910-23ABE5049231</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>4BD38DE6-279C-4A11-A910-23ABE5049231.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592913244.92690301</real>
-			<key>timeStoppedRecording</key>
-			<real>592913381.86962605</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>4BD38DE6-279C-4A11-A910-23ABE5049231</string>
-		</dict>
-		<key>54B3FB36-134C-4F8F-8DB6-750AFAFAC691</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>54B3FB36-134C-4F8F-8DB6-750AFAFAC691.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592909839.12680399</real>
-			<key>timeStoppedRecording</key>
-			<real>592909934.43067801</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>54B3FB36-134C-4F8F-8DB6-750AFAFAC691</string>
-		</dict>
-		<key>56B5FE73-E605-4354-B8D3-E23953A9318C</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>56B5FE73-E605-4354-B8D3-E23953A9318C.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592908897.48552406</real>
-			<key>timeStoppedRecording</key>
-			<real>592908932.18436396</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>56B5FE73-E605-4354-B8D3-E23953A9318C</string>
-		</dict>
-		<key>5AFB2762-3740-41DF-AD41-703A03F38F6B</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>5AFB2762-3740-41DF-AD41-703A03F38F6B.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592912677.24223995</real>
-			<key>timeStoppedRecording</key>
-			<real>592912686.47132695</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>5AFB2762-3740-41DF-AD41-703A03F38F6B</string>
-		</dict>
-		<key>8EB8E70F-5A7B-4371-9CD0-A6D979353E85</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>8EB8E70F-5A7B-4371-9CD0-A6D979353E85.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592911934.38888097</real>
-			<key>timeStoppedRecording</key>
-			<real>592912118.37330306</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>8EB8E70F-5A7B-4371-9CD0-A6D979353E85</string>
-		</dict>
-		<key>A1C83C5E-3874-4DDB-A385-80BF9C6EFDF1</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>A1C83C5E-3874-4DDB-A385-80BF9C6EFDF1.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592908813.02017903</real>
-			<key>timeStoppedRecording</key>
-			<real>592908896.58502901</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>A1C83C5E-3874-4DDB-A385-80BF9C6EFDF1</string>
-		</dict>
-		<key>A4470980-5E3A-42FE-9039-101DBA5C3302</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>A4470980-5E3A-42FE-9039-101DBA5C3302.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592912119.59173501</real>
-			<key>timeStoppedRecording</key>
-			<real>592912143.85450804</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>A4470980-5E3A-42FE-9039-101DBA5C3302</string>
-		</dict>
-		<key>A70239D3-74BA-4F35-9F23-A07E17B98654</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>A70239D3-74BA-4F35-9F23-A07E17B98654.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592904697.69244397</real>
-			<key>timeStoppedRecording</key>
-			<real>592908208.34230101</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>A70239D3-74BA-4F35-9F23-A07E17B98654</string>
-		</dict>
-		<key>ADDB8073-C22B-449D-9C81-FBB2DF7DEEEA</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>ADDB8073-C22B-449D-9C81-FBB2DF7DEEEA.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592912687.50016797</real>
-			<key>timeStoppedRecording</key>
-			<real>592912762.05764401</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>ADDB8073-C22B-449D-9C81-FBB2DF7DEEEA</string>
-		</dict>
-		<key>B01E60BD-D330-4C4D-9135-FDAD466C23B0</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>B01E60BD-D330-4C4D-9135-FDAD466C23B0.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592911353.38873005</real>
-			<key>timeStoppedRecording</key>
-			<real>592911900.32043302</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>B01E60BD-D330-4C4D-9135-FDAD466C23B0</string>
-		</dict>
-		<key>BAF194FF-68D8-4660-84F8-22388CCFF649</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>BAF194FF-68D8-4660-84F8-22388CCFF649.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592913092.921893</real>
-			<key>timeStoppedRecording</key>
-			<real>592913241.33658397</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>BAF194FF-68D8-4660-84F8-22388CCFF649</string>
-		</dict>
-		<key>BDC3B0AD-2A35-4F2D-BDAF-DDC0F79D3DAA</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>BDC3B0AD-2A35-4F2D-BDAF-DDC0F79D3DAA.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592904626.05320597</real>
-			<key>timeStoppedRecording</key>
-			<real>592904696.13351297</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>BDC3B0AD-2A35-4F2D-BDAF-DDC0F79D3DAA</string>
-		</dict>
-		<key>E0231D05-0BEB-4031-AABF-823E53658084</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E0231D05-0BEB-4031-AABF-823E53658084.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592908608.34176302</real>
-			<key>timeStoppedRecording</key>
-			<real>592908809.20251095</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>E0231D05-0BEB-4031-AABF-823E53658084</string>
-		</dict>
-		<key>E43529BE-1180-46F6-9F56-EB9A2B90989E</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E43529BE-1180-46F6-9F56-EB9A2B90989E.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592912144.91086102</real>
-			<key>timeStoppedRecording</key>
-			<real>592912676.17949295</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>E43529BE-1180-46F6-9F56-EB9A2B90989E</string>
-		</dict>
-		<key>EA50692B-0EB8-4CC6-88B3-4EC3651E92FC</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>EA50692B-0EB8-4CC6-88B3-4EC3651E92FC.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592908393.87115705</real>
-			<key>timeStoppedRecording</key>
-			<real>592908429.89911199</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>EA50692B-0EB8-4CC6-88B3-4EC3651E92FC</string>
-		</dict>
-		<key>F29B3C1E-E0E1-4C0A-A3B0-326C9025565A</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>F29B3C1E-E0E1-4C0A-A3B0-326C9025565A.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592911190.56442106</real>
-			<key>timeStoppedRecording</key>
-			<real>592911350.46723294</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>F29B3C1E-E0E1-4C0A-A3B0-326C9025565A</string>
-		</dict>
-		<key>F714F232-BD7F-45E8-9965-A27E92423F7E</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>F714F232-BD7F-45E8-9965-A27E92423F7E.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592908212.64539504</real>
-			<key>timeStoppedRecording</key>
-			<real>592908390.61651695</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>F714F232-BD7F-45E8-9965-A27E92423F7E</string>
-		</dict>
-		<key>FEE86F61-1115-4655-B5ED-C70BA96522FC</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>FEE86F61-1115-4655-B5ED-C70BA96522FC.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>watch-my-level project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>watch-my-level</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug watch-my-level</string>
-			<key>timeStartedRecording</key>
-			<real>592912765.38631701</real>
-			<key>timeStoppedRecording</key>
-			<real>592913088.37951696</real>
-			<key>title</key>
-			<string>Debug watch-my-level</string>
-			<key>uniqueIdentifier</key>
-			<string>FEE86F61-1115-4655-B5ED-C70BA96522FC</string>
+			<string>FB6E48B0-14C5-47C9-AAC6-375EB71BA284</string>
 		</dict>
 	</dict>
 </dict>

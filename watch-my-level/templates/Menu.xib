@@ -16,7 +16,7 @@
                 <outlet property="BT_IC_002" destination="TLJ-HI-ogu" id="3Nq-G8-Re9"/>
                 <outlet property="BT_IC_003" destination="nHI-ER-f4k" id="GCa-gA-ZUq"/>
                 <outlet property="BT_IC_004" destination="rAL-Hp-d3N" id="suO-nj-bcE"/>
-                <outlet property="BT_IG_logo" destination="K3b-Qf-zYM" id="qyk-GD-7EI"/>
+                <outlet property="BT_IG_SYM" destination="K3b-Qf-zYM" id="INc-iQ-POO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,100 +31,117 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydv-5B-EYL" userLabel="Contentview">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3b-Qf-zYM">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3b-Qf-zYM">
                                     <rect key="frame" x="157" y="40" width="100" height="100"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="100" id="AZ8-C5-EcA"/>
                                         <constraint firstAttribute="height" constant="100" id="HJ7-go-DLl"/>
                                     </constraints>
-                                    <state key="normal" title="IG"/>
+                                    <state key="normal" image="augarde"/>
+                                    <connections>
+                                        <action selector="BT_IG_SYM:" destination="-1" eventType="touchUpInside" id="tdU-Mz-rS0"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8v-uB-jyc">
-                                    <rect key="frame" x="10" y="170" width="50" height="50"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8v-uB-jyc">
+                                    <rect key="frame" x="40" y="170" width="50" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="50" id="HSK-GI-PNd"/>
                                         <constraint firstAttribute="height" constant="50" id="R3R-rM-da3"/>
                                     </constraints>
-                                    <state key="normal" title="IC"/>
+                                    <state key="normal" backgroundImage="game">
+                                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLJ-HI-ogu">
-                                    <rect key="frame" x="10" y="230" width="50" height="50"/>
+                                    <rect key="frame" x="40" y="230" width="50" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="50" id="Jk6-Jn-r7d"/>
                                         <constraint firstAttribute="height" constant="50" id="f6P-Xc-gyu"/>
                                     </constraints>
-                                    <state key="normal" title="IC"/>
+                                    <state key="normal" backgroundImage="calendar"/>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHI-ER-f4k">
-                                    <rect key="frame" x="10" y="290" width="50" height="50"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHI-ER-f4k">
+                                    <rect key="frame" x="40" y="290" width="50" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="50" id="3qb-9k-6cK"/>
                                         <constraint firstAttribute="height" constant="50" id="X4Q-WC-dsW"/>
                                     </constraints>
-                                    <state key="normal" title="IC"/>
+                                    <state key="normal" image="about-us"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAL-Hp-d3N">
-                                    <rect key="frame" x="10" y="350" width="50" height="50"/>
+                                    <rect key="frame" x="40" y="350" width="50" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="TtK-84-LL0"/>
                                         <constraint firstAttribute="width" constant="50" id="qfF-RX-koI"/>
                                     </constraints>
-                                    <state key="normal" title="IC"/>
+                                    <state key="normal" backgroundImage="logout"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4Y-Ip-LF1">
-                                    <rect key="frame" x="70" y="170" width="344" height="50"/>
+                                    <rect key="frame" x="110" y="170" width="304" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="Kju-hA-z87"/>
                                     </constraints>
-                                    <state key="normal" title="Play and try to win !"/>
+                                    <state key="normal" title="Play now !"/>
+                                    <connections>
+                                        <action selector="BT_TX_001:" destination="-1" eventType="touchUpInside" id="EY0-0G-XSL"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfl-Gw-aJf">
-                                    <rect key="frame" x="70" y="230" width="344" height="50"/>
+                                    <rect key="frame" x="110" y="230" width="304" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="zsD-Ok-OMr"/>
                                     </constraints>
                                     <state key="normal" title="Events"/>
+                                    <connections>
+                                        <action selector="BT_TX_002:" destination="-1" eventType="touchUpInside" id="Qha-a7-pnp"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5j-rf-who">
-                                    <rect key="frame" x="70" y="290" width="344" height="50"/>
+                                    <rect key="frame" x="110" y="290" width="304" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="19K-AA-XId"/>
                                     </constraints>
                                     <state key="normal" title="About us"/>
+                                    <connections>
+                                        <action selector="BT_TX_003:" destination="-1" eventType="touchUpInside" id="MIH-0r-ei5"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5R-AY-erF">
-                                    <rect key="frame" x="70" y="350" width="344" height="50"/>
+                                    <rect key="frame" x="110" y="350" width="304" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="jzi-zx-HPx"/>
                                     </constraints>
                                     <state key="normal" title="Sign out"/>
+                                    <connections>
+                                        <action selector="BT_TX_004:" destination="-1" eventType="touchUpInside" id="Ye9-4t-ulQ"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="rAL-Hp-d3N" firstAttribute="leading" secondItem="Ydv-5B-EYL" secondAttribute="leading" constant="10" id="0Am-FG-WDb"/>
+                                <constraint firstItem="rAL-Hp-d3N" firstAttribute="leading" secondItem="Ydv-5B-EYL" secondAttribute="leading" constant="40" id="0Am-FG-WDb"/>
                                 <constraint firstItem="K3b-Qf-zYM" firstAttribute="top" secondItem="Ydv-5B-EYL" secondAttribute="top" constant="40" id="4oe-4i-nj1"/>
-                                <constraint firstItem="E8v-uB-jyc" firstAttribute="leading" secondItem="Ydv-5B-EYL" secondAttribute="leading" constant="10" id="G3p-c4-68F"/>
-                                <constraint firstItem="nHI-ER-f4k" firstAttribute="leading" secondItem="Ydv-5B-EYL" secondAttribute="leading" constant="10" id="G6x-lJ-S1F"/>
+                                <constraint firstItem="E8v-uB-jyc" firstAttribute="leading" secondItem="Ydv-5B-EYL" secondAttribute="leading" constant="40" id="G3p-c4-68F"/>
+                                <constraint firstItem="nHI-ER-f4k" firstAttribute="leading" secondItem="Ydv-5B-EYL" secondAttribute="leading" constant="40" id="G6x-lJ-S1F"/>
                                 <constraint firstItem="E8v-uB-jyc" firstAttribute="top" secondItem="K3b-Qf-zYM" secondAttribute="bottom" constant="30" id="GcF-t4-vkX"/>
                                 <constraint firstItem="Nfl-Gw-aJf" firstAttribute="top" secondItem="Z4Y-Ip-LF1" secondAttribute="bottom" constant="10" id="KlN-gX-aiP"/>
                                 <constraint firstItem="Z4Y-Ip-LF1" firstAttribute="top" secondItem="K3b-Qf-zYM" secondAttribute="bottom" constant="30" id="Qca-Nk-CdM"/>
                                 <constraint firstItem="nHI-ER-f4k" firstAttribute="top" secondItem="TLJ-HI-ogu" secondAttribute="bottom" constant="10" id="RO8-Ga-tpE"/>
                                 <constraint firstAttribute="trailing" secondItem="Q5j-rf-who" secondAttribute="trailing" id="T8O-8Y-YuQ"/>
                                 <constraint firstAttribute="trailing" secondItem="Nfl-Gw-aJf" secondAttribute="trailing" id="WdB-80-aNa"/>
-                                <constraint firstItem="TLJ-HI-ogu" firstAttribute="leading" secondItem="Ydv-5B-EYL" secondAttribute="leading" constant="10" id="Wda-V3-mAI"/>
-                                <constraint firstItem="x5R-AY-erF" firstAttribute="leading" secondItem="rAL-Hp-d3N" secondAttribute="trailing" constant="10" id="aBj-vd-Gvt"/>
+                                <constraint firstItem="TLJ-HI-ogu" firstAttribute="leading" secondItem="Ydv-5B-EYL" secondAttribute="leading" constant="40" id="Wda-V3-mAI"/>
+                                <constraint firstItem="x5R-AY-erF" firstAttribute="leading" secondItem="rAL-Hp-d3N" secondAttribute="trailing" constant="20" id="aBj-vd-Gvt"/>
                                 <constraint firstItem="Q5j-rf-who" firstAttribute="top" secondItem="Nfl-Gw-aJf" secondAttribute="bottom" constant="10" id="aDA-84-CLV"/>
                                 <constraint firstAttribute="trailing" secondItem="Z4Y-Ip-LF1" secondAttribute="trailing" id="dIP-uy-sHV"/>
-                                <constraint firstItem="Z4Y-Ip-LF1" firstAttribute="leading" secondItem="E8v-uB-jyc" secondAttribute="trailing" constant="10" id="dzh-hn-LJC"/>
+                                <constraint firstItem="Z4Y-Ip-LF1" firstAttribute="leading" secondItem="E8v-uB-jyc" secondAttribute="trailing" constant="20" id="dzh-hn-LJC"/>
                                 <constraint firstItem="TLJ-HI-ogu" firstAttribute="top" secondItem="E8v-uB-jyc" secondAttribute="bottom" constant="10" id="evh-Th-Krr"/>
-                                <constraint firstItem="Q5j-rf-who" firstAttribute="leading" secondItem="nHI-ER-f4k" secondAttribute="trailing" constant="10" id="fFu-1V-sjv"/>
+                                <constraint firstItem="Q5j-rf-who" firstAttribute="leading" secondItem="nHI-ER-f4k" secondAttribute="trailing" constant="20" id="fFu-1V-sjv"/>
                                 <constraint firstAttribute="height" constant="500" id="k2R-nz-2Io"/>
                                 <constraint firstItem="K3b-Qf-zYM" firstAttribute="centerX" secondItem="Ydv-5B-EYL" secondAttribute="centerX" id="lcx-QU-x0L"/>
                                 <constraint firstItem="rAL-Hp-d3N" firstAttribute="top" secondItem="nHI-ER-f4k" secondAttribute="bottom" constant="10" id="tXE-w9-zXN"/>
                                 <constraint firstItem="x5R-AY-erF" firstAttribute="top" secondItem="Q5j-rf-who" secondAttribute="bottom" constant="10" id="teC-3G-R9B"/>
                                 <constraint firstAttribute="trailing" secondItem="x5R-AY-erF" secondAttribute="trailing" id="zEg-Z5-UPt"/>
-                                <constraint firstItem="Nfl-Gw-aJf" firstAttribute="leading" secondItem="TLJ-HI-ogu" secondAttribute="trailing" constant="10" id="zVr-Mz-q5O"/>
+                                <constraint firstItem="Nfl-Gw-aJf" firstAttribute="leading" secondItem="TLJ-HI-ogu" secondAttribute="trailing" constant="20" id="zVr-Mz-q5O"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -148,4 +165,11 @@
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
         </view>
     </objects>
+    <resources>
+        <image name="about-us" width="530" height="319"/>
+        <image name="augarde" width="800" height="523"/>
+        <image name="calendar" width="256" height="256"/>
+        <image name="game" width="512" height="512"/>
+        <image name="logout" width="512" height="512"/>
+    </resources>
 </document>

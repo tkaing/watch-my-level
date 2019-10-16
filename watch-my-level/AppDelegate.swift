@@ -29,8 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
         // *** Menu ***
-        /*let menuController = UISideMenuNavigationController(rootViewController: Menu())
-        SideMenuManager.default.menuLeftNavigationController = menuController*/
+        let menuController = UISideMenuNavigationController(rootViewController: Menu())
+        SideMenuManager.default.menuLeftNavigationController = menuController
         
         return true
     }

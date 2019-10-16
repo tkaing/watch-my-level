@@ -11,6 +11,11 @@
 		3FB5FAAE2357017500D6FE7D /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5FAAC2357017500D6FE7D /* Home.xib */; };
 		3FB5FAB1235707C600D6FE7D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5FAAF235707C600D6FE7D /* Menu.swift */; };
 		3FB5FAB2235707C600D6FE7D /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5FAB0235707C600D6FE7D /* Menu.xib */; };
+		3FB5FAB423572E0100D6FE7D /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5FAB323572E0100D6FE7D /* MenuManager.swift */; };
+		3FB5FAB72357400E00D6FE7D /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5FAB52357400E00D6FE7D /* Events.swift */; };
+		3FB5FAB82357400E00D6FE7D /* Events.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5FAB62357400E00D6FE7D /* Events.xib */; };
+		3FB5FABA23574E5900D6FE7D /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5FAB923574E5900D6FE7D /* EventModel.swift */; };
+		3FB5FABE2357520A00D6FE7D /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5FABD2357520A00D6FE7D /* ColorManager.swift */; };
 		3FBDA2CD2356E69C00D16992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDA2CC2356E69C00D16992 /* AppDelegate.swift */; };
 		3FBDA2CF2356E69C00D16992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDA2CE2356E69C00D16992 /* ViewController.swift */; };
 		3FBDA2D42356E69D00D16992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBDA2D32356E69D00D16992 /* Assets.xcassets */; };
@@ -24,6 +29,11 @@
 		3FB5FAAC2357017500D6FE7D /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 		3FB5FAAF235707C600D6FE7D /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		3FB5FAB0235707C600D6FE7D /* Menu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Menu.xib; sourceTree = "<group>"; };
+		3FB5FAB323572E0100D6FE7D /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		3FB5FAB52357400E00D6FE7D /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		3FB5FAB62357400E00D6FE7D /* Events.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Events.xib; sourceTree = "<group>"; };
+		3FB5FAB923574E5900D6FE7D /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		3FB5FABD2357520A00D6FE7D /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		3FBDA2C92356E69C00D16992 /* watch-my-level.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watch-my-level.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBDA2CC2356E69C00D16992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FBDA2CE2356E69C00D16992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +72,7 @@
 			children = (
 				3FB5FAB0235707C600D6FE7D /* Menu.xib */,
 				3FB5FAAC2357017500D6FE7D /* Home.xib */,
+				3FB5FAB62357400E00D6FE7D /* Events.xib */,
 			);
 			path = templates;
 			sourceTree = "<group>";
@@ -76,6 +87,8 @@
 		3FB5FAA82356E97700D6FE7D /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				3FB5FAB323572E0100D6FE7D /* MenuManager.swift */,
+				3FB5FABD2357520A00D6FE7D /* ColorManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -83,6 +96,7 @@
 		3FB5FAA92356E99F00D6FE7D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3FB5FAB923574E5900D6FE7D /* EventModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +104,7 @@
 		3FB5FAAA2356E9D400D6FE7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3FB5FAB52357400E00D6FE7D /* Events.swift */,
 				3FB5FAAB2357017500D6FE7D /* Home.swift */,
 				3FB5FAAF235707C600D6FE7D /* Menu.swift */,
 			);
@@ -208,6 +223,7 @@
 				3FBDA2D72356E69D00D16992 /* LaunchScreen.storyboard in Resources */,
 				3FB5FAAE2357017500D6FE7D /* Home.xib in Resources */,
 				3FB5FAB2235707C600D6FE7D /* Menu.xib in Resources */,
+				3FB5FAB82357400E00D6FE7D /* Events.xib in Resources */,
 				3FBDA2D42356E69D00D16992 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB5FAB72357400E00D6FE7D /* Events.swift in Sources */,
+				3FB5FAB423572E0100D6FE7D /* MenuManager.swift in Sources */,
 				3FBDA2CF2356E69C00D16992 /* ViewController.swift in Sources */,
 				3FB5FAAD2357017500D6FE7D /* Home.swift in Sources */,
+				3FB5FABA23574E5900D6FE7D /* EventModel.swift in Sources */,
 				3FB5FAB1235707C600D6FE7D /* Menu.swift in Sources */,
 				3FBDA2CD2356E69C00D16992 /* AppDelegate.swift in Sources */,
+				3FB5FABE2357520A00D6FE7D /* ColorManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
