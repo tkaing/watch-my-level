@@ -30,7 +30,6 @@ public struct Event: ImmutableMappable {
         self.description = try map.value("description")
         self.link = try map.value("link")
     }
-<<<<<<< HEAD
     
     // Model -> JSON
     public func mapping(map: Map) {
@@ -39,15 +38,4 @@ public struct Event: ImmutableMappable {
         description >>> map["description"]
         link >>> map["link"]
     }
-    
-=======
-    
-    // Model -> JSON
-    public func mapping(map: Map) {
-        id >>> (map["id"])
-        title >>> map["title"]
-        description >>> map["description"]
-        link >>> map["link"]
-    }
->>>>>>> 875444984c43e49754e1a2745280f721d8ec8983
 }
