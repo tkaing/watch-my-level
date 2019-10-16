@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F91C0512357715100F137FC /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C0502357715100F137FC /* EventService.swift */; };
+		3F91C0532357716B00F137FC /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91C0522357716B00F137FC /* RequestService.swift */; };
 		3FB5FAAD2357017500D6FE7D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5FAAB2357017500D6FE7D /* Home.swift */; };
 		3FB5FAAE2357017500D6FE7D /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5FAAC2357017500D6FE7D /* Home.xib */; };
 		3FB5FAB1235707C600D6FE7D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5FAAF235707C600D6FE7D /* Menu.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		1886DBC233256F6FC4B67F7C /* Pods-watch-my-level.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watch-my-level.release.xcconfig"; path = "Target Support Files/Pods-watch-my-level/Pods-watch-my-level.release.xcconfig"; sourceTree = "<group>"; };
 		342EEF589EFA8814513C433F /* Pods_watch_my_level.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_watch_my_level.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F91C0502357715100F137FC /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		3F91C0522357716B00F137FC /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		3FB5FAAB2357017500D6FE7D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		3FB5FAAC2357017500D6FE7D /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 		3FB5FAAF235707C600D6FE7D /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -112,6 +116,15 @@
 				8FE50E4B23575FBC00E8A049 /* GameLevel.xib */,
 			);
 			path = templates;
+			sourceTree = "<group>";
+		};
+		3FB5FAA72356E94300D6FE7D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3F91C0502357715100F137FC /* EventService.swift */,
+				3F91C0522357716B00F137FC /* RequestService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		3FB5FAA82356E97700D6FE7D /* Manager */ = {
@@ -327,11 +340,13 @@
 				3FBE0D592357787900F4EA82 /* EventService.swift in Sources */,
 				3FBE0D5C235786EE00F4EA82 /* Loading.swift in Sources */,
 				8FE50E4C23575FBC00E8A049 /* GameLevel.swift in Sources */,
+				3F91C0532357716B00F137FC /* RequestService.swift in Sources */,
 				3FB5FAAD2357017500D6FE7D /* Home.swift in Sources */,
 				3FB5FABA23574E5900D6FE7D /* EventModel.swift in Sources */,
 				3FB5FAB1235707C600D6FE7D /* Menu.swift in Sources */,
 				3FBE0D552357783200F4EA82 /* RequestService.swift in Sources */,
 				3FBDA2CD2356E69C00D16992 /* AppDelegate.swift in Sources */,
+				3F91C0512357715100F137FC /* EventService.swift in Sources */,
 				3FB5FABE2357520A00D6FE7D /* ColorManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

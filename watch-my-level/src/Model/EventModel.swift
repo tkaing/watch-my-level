@@ -1,12 +1,12 @@
 import Foundation
 import ObjectMapper
 
-public struct Event : ImmutableMappable {
+public struct Event: ImmutableMappable {
     
     var id: Int?
-    var title: String;
-    var description: String;
-    var link: String;
+    var title: String
+    var description: String
+    var link: String
     
     // 1 | Initializer
     init(id: Int?, title: String, description: String, link: String) {
@@ -30,6 +30,7 @@ public struct Event : ImmutableMappable {
         self.description = try map.value("description")
         self.link = try map.value("link")
     }
+<<<<<<< HEAD
     
     // Model -> JSON
     public func mapping(map: Map) {
@@ -39,4 +40,14 @@ public struct Event : ImmutableMappable {
         link >>> map["link"]
     }
     
+=======
+    
+    // Model -> JSON
+    public func mapping(map: Map) {
+        id >>> (map["id"])
+        title >>> map["title"]
+        description >>> map["description"]
+        link >>> map["link"]
+    }
+>>>>>>> 875444984c43e49754e1a2745280f721d8ec8983
 }
