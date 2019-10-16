@@ -26,18 +26,16 @@
                         <constraint firstAttribute="height" constant="128" id="AvX-vp-kZi"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="montre-1" translatesAutoresizingMaskIntoConstraints="NO" id="9Q3-hR-MhS">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cadran_black_white" translatesAutoresizingMaskIntoConstraints="NO" id="9Q3-hR-MhS">
                     <rect key="frame" x="20" y="371" width="180" height="130"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="180" id="Gcz-OJ-Bva"/>
                         <constraint firstAttribute="height" constant="130" id="g6h-A7-gIt"/>
                     </constraints>
                 </imageView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhA-Fb-K6X">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lhA-Fb-K6X">
                     <rect key="frame" x="214" y="371" width="180" height="130"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="180" id="gDA-Xu-JmH"/>
                         <constraint firstAttribute="height" constant="130" id="vQV-mo-qjg"/>
                     </constraints>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -45,26 +43,53 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalisation du cadran" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTo-Yr-lmx">
+                    <rect key="frame" x="20" y="571" width="374" height="32"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mkj-0h-2oV">
+                    <rect key="frame" x="20" y="638" width="186" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I5W-Y2-FWC">
+                    <rect key="frame" x="214" y="638" width="180" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="bcG-Ix-ESY"/>
+                        <constraint firstAttribute="width" constant="180" id="ynF-AZ-ZRW"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="9Q3-hR-MhS" firstAttribute="leading" secondItem="8U1-iw-UTr" secondAttribute="leading" constant="20" id="0t0-Ch-HyV"/>
-                <constraint firstItem="8U1-iw-UTr" firstAttribute="trailing" secondItem="lhA-Fb-K6X" secondAttribute="trailing" constant="20" id="0tv-T1-9hG"/>
                 <constraint firstItem="06P-g0-rFz" firstAttribute="leading" secondItem="8U1-iw-UTr" secondAttribute="leading" constant="75" id="7iX-SD-dwx"/>
+                <constraint firstItem="8U1-iw-UTr" firstAttribute="bottom" secondItem="mkj-0h-2oV" secondAttribute="bottom" constant="96" id="7xL-Qm-yST"/>
+                <constraint firstItem="I5W-Y2-FWC" firstAttribute="top" secondItem="mkj-0h-2oV" secondAttribute="top" id="8fS-jd-7JA"/>
+                <constraint firstItem="8U1-iw-UTr" firstAttribute="trailing" secondItem="I5W-Y2-FWC" secondAttribute="trailing" constant="20" id="DUO-UX-uAH"/>
+                <constraint firstItem="8U1-iw-UTr" firstAttribute="trailing" secondItem="PTo-Yr-lmx" secondAttribute="trailing" constant="20" id="E2b-rR-9cE"/>
                 <constraint firstItem="lhA-Fb-K6X" firstAttribute="top" secondItem="xug-Z7-heu" secondAttribute="bottom" constant="47" id="HWk-hy-cAg"/>
                 <constraint firstItem="06P-g0-rFz" firstAttribute="centerX" secondItem="xug-Z7-heu" secondAttribute="centerX" id="KgA-FA-XyE"/>
-                <constraint firstItem="lhA-Fb-K6X" firstAttribute="leading" secondItem="9Q3-hR-MhS" secondAttribute="trailing" constant="14" id="La3-BH-OrO"/>
+                <constraint firstItem="PTo-Yr-lmx" firstAttribute="centerX" secondItem="v1m-zH-AZ8" secondAttribute="centerX" id="P3x-JL-Nzd"/>
+                <constraint firstItem="PTo-Yr-lmx" firstAttribute="top" secondItem="9Q3-hR-MhS" secondAttribute="bottom" constant="70" id="QSC-kl-0fy"/>
+                <constraint firstItem="PTo-Yr-lmx" firstAttribute="leading" secondItem="8U1-iw-UTr" secondAttribute="leading" constant="20" id="Sz8-hb-LuQ"/>
                 <constraint firstItem="06P-g0-rFz" firstAttribute="top" secondItem="8U1-iw-UTr" secondAttribute="top" constant="70" id="T9g-lT-yvB"/>
+                <constraint firstItem="I5W-Y2-FWC" firstAttribute="leading" secondItem="mkj-0h-2oV" secondAttribute="trailing" constant="8" id="Yoe-rl-1Ke"/>
                 <constraint firstItem="xug-Z7-heu" firstAttribute="top" secondItem="06P-g0-rFz" secondAttribute="bottom" constant="45" id="f7i-Wc-dRO"/>
                 <constraint firstItem="06P-g0-rFz" firstAttribute="centerX" secondItem="v1m-zH-AZ8" secondAttribute="centerX" id="kaK-so-qWb"/>
+                <constraint firstItem="mkj-0h-2oV" firstAttribute="top" secondItem="PTo-Yr-lmx" secondAttribute="bottom" constant="35" id="q4T-Yy-kBF"/>
                 <constraint firstItem="9Q3-hR-MhS" firstAttribute="top" secondItem="xug-Z7-heu" secondAttribute="bottom" constant="47" id="vRa-Su-Gw0"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="8U1-iw-UTr"/>
-            <point key="canvasLocation" x="139" y="101"/>
+            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
         </view>
     </objects>
     <resources>
         <image name="augarde" width="800" height="523"/>
-        <image name="montre-1" width="420" height="452"/>
+        <image name="cadran_black_white" width="122" height="122"/>
     </resources>
 </document>
