@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FB5FAAD2357017500D6FE7D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5FAAB2357017500D6FE7D /* Home.swift */; };
+		3FB5FAAE2357017500D6FE7D /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5FAAC2357017500D6FE7D /* Home.xib */; };
+		3FB5FAB1235707C600D6FE7D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5FAAF235707C600D6FE7D /* Menu.swift */; };
+		3FB5FAB2235707C600D6FE7D /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5FAB0235707C600D6FE7D /* Menu.xib */; };
 		3FBDA2CD2356E69C00D16992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDA2CC2356E69C00D16992 /* AppDelegate.swift */; };
 		3FBDA2CF2356E69C00D16992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDA2CE2356E69C00D16992 /* ViewController.swift */; };
 		3FBDA2D42356E69D00D16992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBDA2D32356E69D00D16992 /* Assets.xcassets */; };
@@ -16,6 +20,10 @@
 
 /* Begin PBXFileReference section */
 		13C232DDBBF61DD2F5105CA3 /* Pods_watch_my_level.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_watch_my_level.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB5FAAB2357017500D6FE7D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		3FB5FAAC2357017500D6FE7D /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
+		3FB5FAAF235707C600D6FE7D /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		3FB5FAB0235707C600D6FE7D /* Menu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Menu.xib; sourceTree = "<group>"; };
 		3FBDA2C92356E69C00D16992 /* watch-my-level.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watch-my-level.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBDA2CC2356E69C00D16992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FBDA2CE2356E69C00D16992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +60,8 @@
 		3FB5FAA52356E92A00D6FE7D /* templates */ = {
 			isa = PBXGroup;
 			children = (
+				3FB5FAB0235707C600D6FE7D /* Menu.xib */,
+				3FB5FAAC2357017500D6FE7D /* Home.xib */,
 			);
 			path = templates;
 			sourceTree = "<group>";
@@ -80,6 +90,8 @@
 		3FB5FAAA2356E9D400D6FE7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3FB5FAAB2357017500D6FE7D /* Home.swift */,
+				3FB5FAAF235707C600D6FE7D /* Menu.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBDA2D72356E69D00D16992 /* LaunchScreen.storyboard in Resources */,
+				3FB5FAAE2357017500D6FE7D /* Home.xib in Resources */,
+				3FB5FAB2235707C600D6FE7D /* Menu.xib in Resources */,
 				3FBDA2D42356E69D00D16992 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBDA2CF2356E69C00D16992 /* ViewController.swift in Sources */,
+				3FB5FAAD2357017500D6FE7D /* Home.swift in Sources */,
+				3FB5FAB1235707C600D6FE7D /* Menu.swift in Sources */,
 				3FBDA2CD2356E69C00D16992 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
