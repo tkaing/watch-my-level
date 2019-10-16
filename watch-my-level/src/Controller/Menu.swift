@@ -16,6 +16,7 @@ class Menu: UIViewController {
     @IBOutlet var BT_IC_002: UIButton!
     @IBOutlet var BT_IC_003: UIButton!
     @IBOutlet var BT_IC_004: UIButton!
+    @IBOutlet var BT_IC_005: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +51,9 @@ class Menu: UIViewController {
     @IBAction func BT_TX_004(_ sender: UIButton) {
         self.redirectTo(from: self, to: Home())
     }
+    @IBAction func BT_TX_005(_ sender: UIButton) {
+        self.redirectTo(from: self, to: Catalogue())
+    }
 }
 
 // Menu Extension
@@ -74,6 +78,7 @@ extension Menu {
         self.setImage(BT: self.BT_IC_002)
         self.setImage(BT: self.BT_IC_003)
         self.setImage(BT: self.BT_IC_004)
+        self.setImage(BT: self.BT_IC_005)
     }
     
     func setImage(BT: UIButton) {

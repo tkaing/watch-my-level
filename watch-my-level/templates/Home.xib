@@ -56,7 +56,7 @@
                     <state key="normal" title="CLICK HERE TO PLAY !!!"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efr-aP-heJ">
-                    <rect key="frame" x="157" y="456" width="100" height="100"/>
+                    <rect key="frame" x="157" y="451" width="100" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="2Se-s0-Prl"/>
                         <constraint firstAttribute="width" constant="100" id="Xl5-Gs-oGU"/>
@@ -64,7 +64,7 @@
                     <state key="normal" title="Button" image="game-1"/>
                 </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="LVX-hj-4xy">
-                    <rect key="frame" x="20" y="677" width="374" height="150"/>
+                    <rect key="frame" x="20" y="707" width="374" height="150"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="ew2-Lh-y5Q"/>
@@ -75,7 +75,7 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Augarde" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpB-6f-SlF">
-                    <rect key="frame" x="100" y="653" width="214" height="21"/>
+                    <rect key="frame" x="100" y="686" width="214" height="21"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -102,6 +102,34 @@
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHd-ge-sc7">
+                    <rect key="frame" x="172" y="591" width="70" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="QIv-bR-d9o"/>
+                        <constraint firstAttribute="height" constant="60" id="hWp-aT-Vd8"/>
+                    </constraints>
+                    <state key="normal" image="montre-3">
+                        <attributedString key="attributedTitle"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consulter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqf-ds-PEI">
+                    <rect key="frame" x="93" y="566" width="74" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="kCk-pP-wb9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catalogue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDA-5H-k67">
+                    <rect key="frame" x="247" y="566" width="78" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Ed8-Bj-BkE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -112,12 +140,13 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LVX-hj-4xy" secondAttribute="trailing" constant="20" id="DRL-Xm-Ldk"/>
                 <constraint firstItem="LVX-hj-4xy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FW0-KN-75k"/>
                 <constraint firstItem="LVX-hj-4xy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="IWr-Rn-5et"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LVX-hj-4xy" secondAttribute="bottom" constant="35" id="Juh-62-KUP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LVX-hj-4xy" secondAttribute="bottom" constant="5" id="Juh-62-KUP"/>
                 <constraint firstItem="xYq-BA-0rN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KwQ-UU-efM"/>
                 <constraint firstItem="Z53-45-C3i" firstAttribute="top" secondItem="0z7-v5-s8n" secondAttribute="bottom" constant="10" id="MSF-AB-zgf"/>
+                <constraint firstItem="Xqf-ds-PEI" firstAttribute="top" secondItem="efr-aP-heJ" secondAttribute="bottom" constant="15" id="PRO-0o-7iP"/>
+                <constraint firstItem="vHd-ge-sc7" firstAttribute="leading" secondItem="Xqf-ds-PEI" secondAttribute="trailing" constant="5" id="PUG-YT-Cv0"/>
                 <constraint firstItem="Z53-45-C3i" firstAttribute="leading" secondItem="A3g-Ek-hhu" secondAttribute="trailing" constant="10" id="RdE-cs-czX"/>
                 <constraint firstItem="K7B-Nh-HVN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="UIT-SH-Sew"/>
-                <constraint firstItem="efr-aP-heJ" firstAttribute="top" secondItem="hEF-OV-ZMs" secondAttribute="bottom" constant="10" id="URi-jS-ic6"/>
                 <constraint firstItem="A3g-Ek-hhu" firstAttribute="leading" secondItem="xoA-6i-oOt" secondAttribute="trailing" constant="10" id="WiW-jz-r0h"/>
                 <constraint firstItem="0z7-v5-s8n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bCF-9w-o7D"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0z7-v5-s8n" secondAttribute="trailing" id="c90-kT-Et0"/>
@@ -125,12 +154,18 @@
                 <constraint firstItem="hEF-OV-ZMs" firstAttribute="top" secondItem="A3g-Ek-hhu" secondAttribute="bottom" constant="30" id="eQH-fI-SOo"/>
                 <constraint firstItem="xoA-6i-oOt" firstAttribute="top" secondItem="0z7-v5-s8n" secondAttribute="bottom" constant="10" id="er7-Jf-AGZ"/>
                 <constraint firstItem="0z7-v5-s8n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="i1p-rT-JuY"/>
+                <constraint firstItem="WDA-5H-k67" firstAttribute="leading" secondItem="vHd-ge-sc7" secondAttribute="trailing" constant="5" id="kCH-z8-Q9j"/>
+                <constraint firstItem="WDA-5H-k67" firstAttribute="top" secondItem="efr-aP-heJ" secondAttribute="bottom" constant="15" id="luh-en-0x4"/>
                 <constraint firstItem="kpB-6f-SlF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="maj-eI-vIQ"/>
                 <constraint firstItem="hEF-OV-ZMs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mdr-5I-eKK"/>
+                <constraint firstItem="vHd-ge-sc7" firstAttribute="top" secondItem="efr-aP-heJ" secondAttribute="bottom" constant="20" id="moh-j1-W3y"/>
                 <constraint firstItem="0z7-v5-s8n" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="olg-3U-q4R"/>
-                <constraint firstItem="LVX-hj-4xy" firstAttribute="top" secondItem="kpB-6f-SlF" secondAttribute="bottom" constant="3" id="rOw-LZ-UOI"/>
+                <constraint firstItem="vHd-ge-sc7" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="pTT-Qz-cid"/>
+                <constraint firstItem="LVX-hj-4xy" firstAttribute="top" secondItem="kpB-6f-SlF" secondAttribute="bottom" id="rOw-LZ-UOI"/>
                 <constraint firstItem="xYq-BA-0rN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="s8n-nK-hmK"/>
+                <constraint firstItem="vHd-ge-sc7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vRo-4x-DGl"/>
                 <constraint firstItem="A3g-Ek-hhu" firstAttribute="top" secondItem="0z7-v5-s8n" secondAttribute="bottom" constant="10" id="wha-tP-LiU"/>
+                <constraint firstItem="efr-aP-heJ" firstAttribute="top" secondItem="hEF-OV-ZMs" secondAttribute="bottom" constant="5" id="z0l-JG-1kA"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
@@ -139,6 +174,7 @@
     <resources>
         <image name="dot" width="512" height="512"/>
         <image name="game-1" width="600" height="600"/>
+        <image name="montre-3" width="512" height="512"/>
         <image name="puzzle_1" width="1280" height="972"/>
     </resources>
 </document>

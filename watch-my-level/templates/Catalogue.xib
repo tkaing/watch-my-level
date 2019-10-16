@@ -8,30 +8,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Events" customModule="watch_my_level" customModuleProvider="target">
-            <connections>
-                <outlet property="table" destination="dCi-xe-kMn" id="JwX-Fe-tMO"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Catalogue" customModule="watch_my_level" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1ij-HK-png">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dCi-xe-kMn">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8aB-ou-izO">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="dCi-xe-kMn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Meh-Cw-v7S"/>
-                <constraint firstItem="dCi-xe-kMn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aTb-Ch-BHv"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dCi-xe-kMn" secondAttribute="bottom" id="i2r-2R-hev"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dCi-xe-kMn" secondAttribute="trailing" id="uqz-aw-weL"/>
+                <constraint firstItem="xNs-JY-8PU" firstAttribute="trailing" secondItem="8aB-ou-izO" secondAttribute="trailing" id="93M-LU-SjS"/>
+                <constraint firstItem="xNs-JY-8PU" firstAttribute="bottom" secondItem="8aB-ou-izO" secondAttribute="bottom" id="Rh0-Kq-8CM"/>
+                <constraint firstItem="8aB-ou-izO" firstAttribute="top" secondItem="xNs-JY-8PU" secondAttribute="top" id="j2W-7I-yYK"/>
+                <constraint firstItem="8aB-ou-izO" firstAttribute="leading" secondItem="xNs-JY-8PU" secondAttribute="leading" id="xzK-kQ-EeP"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <viewLayoutGuide key="safeArea" id="xNs-JY-8PU"/>
             <point key="canvasLocation" x="139" y="50"/>
         </view>
     </objects>
