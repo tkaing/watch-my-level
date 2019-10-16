@@ -35,11 +35,13 @@ class Menu: UIViewController {
     }
     @IBAction func BT_TX_002(_ sender: UIButton) {
         
-        EventService.default.findAll { (events) in
+        let lo = Loading()
+        
+        self.redirectTo(from: self, to: lo)
+        
+        EventService.default.findAll { (items) in
             
-            print(events)
-            
-            self.redirectTo(from: self, to: Events())
+            self.redirectTo(from: lo, to: Events())
         }
     }
     @IBAction func BT_TX_003(_ sender: UIButton) {

@@ -11,7 +11,7 @@ import ObjectMapper
 
 public class RequestService<T: ImmutableMappable>
 {
-    let API_DEFAULT = "http://localhost"
+    let API_DEFAULT = "http://localhost:6789/"
     
     func create(address: String, object: T, complete: @escaping (Int) -> Void) {
         
