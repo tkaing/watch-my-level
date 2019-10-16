@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import SideMenu
+import SideMenu
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

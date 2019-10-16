@@ -6,8 +6,8 @@ target 'watch-my-level' do
   use_frameworks!
 
   # Pods for watch-my-level
-  # pod 'Alamofire'
-  # pod 'ObjectMapper'
-  # pod 'SideMenu'
+  pod 'Alamofire'
+  pod 'ObjectMapper'
+  pod 'SideMenu'
 
 end

@@ -1,3 +1,24 @@
-PODFILE CHECKSUM: 30a2128171e3eb79e4f0e249a3fc0d82f89074a7
+PODS:
+  - Alamofire (4.8.2)
+  - ObjectMapper (3.5.1)
+  - SideMenu (5.0.3)
 
-COCOAPODS: 1.8.3
+DEPENDENCIES:
+  - Alamofire
+  - ObjectMapper
+  - SideMenu
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ObjectMapper
+    - SideMenu
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  SideMenu: 1dcaabce84538c53325c287f7fe62999379a641c
+
+PODFILE CHECKSUM: 0082c22046d7e7f75d875666986e50fe1caee721
+
+COCOAPODS: 1.7.3

@@ -53,6 +53,10 @@ extension Home {
     
     func initView() {
         
+        // ST Menu
+        self.initPanel()
+        self.navigationItem.title = "Home"
+        
         // ST Front
         self.setImage(BT: self.BT_IC_LEFT)
         self.setImage(BT: self.BT_IC_RIGHT)
