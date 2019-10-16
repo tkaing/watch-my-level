@@ -34,7 +34,13 @@ class Menu: UIViewController {
         self.redirectTo(from: self, to: Home())
     }
     @IBAction func BT_TX_002(_ sender: UIButton) {
-        self.redirectTo(from: self, to: Events())
+        
+        EventService.default.findAll { (events) in
+            
+            print(events)
+            
+            self.redirectTo(from: self, to: Events())
+        }
     }
     @IBAction func BT_TX_003(_ sender: UIButton) {
         self.redirectTo(from: self, to: Home())
