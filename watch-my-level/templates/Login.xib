@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Login" customModule="watch_my_level" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfe-5m-6NR">
+                    <rect key="frame" x="165.5" y="287" width="83.5" height="37"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="31"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="augarde" translatesAutoresizingMaskIntoConstraints="NO" id="Cmb-KE-wTW">
+                    <rect key="frame" x="75" y="114" width="264" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="LDL-4I-aqZ"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pmU-g8-hSB">
+                    <rect key="frame" x="50" y="436" width="314" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6E-fx-xSX">
+                    <rect key="frame" x="50" y="405" width="314" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Cka-jH-hlY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G1a-tQ-hwj">
+                    <rect key="frame" x="50" y="536" width="314" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDM-0m-mIJ">
+                    <rect key="frame" x="50" y="505" width="314" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="YoU-EG-U6T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jj-uR-vnB">
+                    <rect key="frame" x="171" y="600" width="72" height="38"/>
+                    <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="23"/>
+                    <state key="normal" title="LOGIN">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Cmb-KE-wTW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="B10-D8-2Xy"/>
+                <constraint firstItem="pmU-g8-hSB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BS6-pV-xc0"/>
+                <constraint firstItem="pmU-g8-hSB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="C6s-lB-xQo"/>
+                <constraint firstItem="G1a-tQ-hwj" firstAttribute="trailing" secondItem="pmU-g8-hSB" secondAttribute="trailing" id="DbN-Ws-mII"/>
+                <constraint firstItem="Cmb-KE-wTW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="J4Z-zP-2fS"/>
+                <constraint firstItem="5jj-uR-vnB" firstAttribute="top" secondItem="G1a-tQ-hwj" secondAttribute="bottom" constant="30" id="JOe-j5-RKk"/>
+                <constraint firstItem="G1a-tQ-hwj" firstAttribute="leading" secondItem="pmU-g8-hSB" secondAttribute="leading" id="JTw-bC-b5K"/>
+                <constraint firstItem="G1a-tQ-hwj" firstAttribute="top" secondItem="IDM-0m-mIJ" secondAttribute="bottom" constant="10" id="Ma2-ls-MTo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S6E-fx-xSX" secondAttribute="trailing" constant="50" id="P1Z-VY-yxB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pmU-g8-hSB" secondAttribute="trailing" constant="50" id="bOm-mS-quo"/>
+                <constraint firstItem="Cmb-KE-wTW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="bge-EF-nws"/>
+                <constraint firstItem="G1a-tQ-hwj" firstAttribute="trailing" secondItem="IDM-0m-mIJ" secondAttribute="trailing" id="cad-O5-j3z"/>
+                <constraint firstItem="S6E-fx-xSX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="iGl-U4-AaY"/>
+                <constraint firstItem="G1a-tQ-hwj" firstAttribute="leading" secondItem="IDM-0m-mIJ" secondAttribute="leading" id="lcY-Vg-bAo"/>
+                <constraint firstItem="5jj-uR-vnB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ld6-fl-WQ0"/>
+                <constraint firstItem="Cmb-KE-wTW" firstAttribute="centerX" secondItem="cfe-5m-6NR" secondAttribute="centerX" id="obN-S6-L1C"/>
+                <constraint firstItem="S6E-fx-xSX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oli-5Q-3L6"/>
+                <constraint firstItem="pmU-g8-hSB" firstAttribute="top" secondItem="S6E-fx-xSX" secondAttribute="bottom" constant="10" id="pQh-1Y-tvs"/>
+                <constraint firstItem="S6E-fx-xSX" firstAttribute="top" secondItem="cfe-5m-6NR" secondAttribute="bottom" constant="81" id="utQ-Vz-2wZ"/>
+                <constraint firstItem="IDM-0m-mIJ" firstAttribute="top" secondItem="pmU-g8-hSB" secondAttribute="bottom" constant="35" id="v4w-0z-gtH"/>
+                <constraint firstItem="cfe-5m-6NR" firstAttribute="top" secondItem="Cmb-KE-wTW" secondAttribute="bottom" constant="45" id="vpW-Kq-Mhr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="101"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="augarde" width="800" height="523"/>
+    </resources>
+</document>
