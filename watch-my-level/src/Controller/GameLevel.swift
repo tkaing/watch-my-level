@@ -13,7 +13,9 @@ class GameLevel: UIViewController {
     @IBOutlet var CL_PLATFORM: UICollectionView!
     @IBOutlet var LB_TIME: UILabel!
     
-    var pairs: [Card] = []
+    public static var onProcess: Bool = false
+    
+    var pairs: [Int] = []
     
     var cards: [Card] = [
         Card(id: 1),
@@ -21,12 +23,16 @@ class GameLevel: UIViewController {
         Card(id: 2),
         Card(id: 2),
         Card(id: 3),
-        Card(id: 3)
+        Card(id: 3),
+        Card(id: 4),
+        Card(id: 4),
+        Card(id: 5),
+        Card(id: 5),
+        Card(id: 6),
+        Card(id: 6)
     ]
     
-    var activeCard: Card?
-    var storedCard1: Card?
-    var storedCard2: Card?
+    var storedIndex: Int?
     
     fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
     
@@ -48,63 +54,29 @@ class GameLevel: UIViewController {
 // Game Extension
 extension GameLevel {
     
-    func move() {
+    func doSomething(index: Int) {
     
-        if let card001 = storedCard1, let card002 = storedCard2 {
+        if let currentIndex = self.storedIndex {
             
-            print(card001.id)
-            print(card002.id)
-            
-            print(self.indexOf(card: card001))
-            print(self.indexOf(card: card002))
-            
-            if card001.id == card002.id && self.indexOf(card: card001) != self.indexOf(card: card002) {
+            if self.cards[currentIndex].id == self.cards[index].id {
                 
-                print("xxx")
-                
-                self.pairs.append(card001)
-                self.pairs.append(card002)
+                self.pairs.append(currentIndex)
+                self.pairs.append(index)
                 
             } else {
                 
-                self.storedCard1 = nil
-                self.storedCard2 = nil
+                let currentCell = self.getCell(index: currentIndex) as! CardCell
+                let cell = self.getCell(index: index) as! CardCell
                 
-                print(self.pairs)
-                
-                for (i, cell) in self.CL_PLATFORM.visibleCells.enumerated() {
-                    
-                    let c = cell as! CardCell
-                    
-                    if self.pairs.contains(self.cards[i]) == false {
-                    
-                        c.showCard(false, animted: true)
-                    }
-                }
+                currentCell.showCard(false, animted: false)
+                cell.showCard(false, animted: false)
             }
-        }
-    }
-    
-    func indexOf(card: Card) -> Int {
-        
-        for (k, c) in self.cards.enumerated() {
-            if c == card {
-                return k
-            }
-        }
-        
-        return -1
-    }
-    
-    func regCurCards(card: Card) {
-        
-        if self.storedCard1 == nil {
             
-            self.storedCard1 = card
+            self.storedIndex = nil
             
-        } else if self.storedCard2 == nil {
+        } else {
             
-            self.storedCard2 = card
+            self.storedIndex = index
         }
     }
 }
@@ -133,28 +105,35 @@ extension GameLevel: UICollectionViewDelegate, UICollectionViewDataSource {
     // On Click
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if self.pairs.contains(self.cards[indexPath.row]) == false {
+        print(GameLevel.onProcess)
+        
+        if GameLevel.onProcess == false && self.pairs.contains(indexPath.row) == false {
+            
+            GameLevel.onProcess = true
             
             let cell = collectionView.cellForItem(at: indexPath) as! CardCell
             
-            cell.showCard(true, animted: true)
+            cell.showCard(true, animted: false)
             
-            self.activeCard = self.cards[indexPath.row]
-            
-            Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(xxx), userInfo: nil, repeats: false)
-            
-            collectionView.deselectItem(at: indexPath, animated: true)
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { (timerX) in
+                
+                self.doSomething(index: indexPath.row)
+                
+                GameLevel.onProcess = false
+            }
         }
+            
+        collectionView.deselectItem(at: indexPath, animated: true)
     }
     
-    @objc func xxx() {
+    func getCell(index: Int) -> UICollectionViewCell? {
         
-        if let card = self.activeCard {
+        for (i, cell) in self.CL_PLATFORM.visibleCells.enumerated() {
             
-            self.regCurCards(card: card)
-            
-            self.move()
+            if i == index { return cell }
         }
+        
+        return nil
     }
 }
 
