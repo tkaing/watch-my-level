@@ -12,6 +12,7 @@ class GameLevel: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Game Level"
 
         // Do any additional setup after loading the view.
     }
