@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Catalogue" customModule="watch_my_level" customModuleProvider="target">
             <connections>
+                <outlet property="table" destination="8aB-ou-izO" id="ldG-xe-vRd"/>
                 <outlet property="view" destination="1ij-HK-png" id="Ffc-7x-vpv"/>
             </connections>
         </placeholder>

@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // *** Home ***
-        let homeController = CatalogueProduct()
+        let homeController = Catalogue()
         let navigationController = UINavigationController(rootViewController: homeController)
         
         // *** Navigation ***
