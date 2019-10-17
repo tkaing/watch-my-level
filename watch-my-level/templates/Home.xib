@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -72,7 +70,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="ew2-Lh-y5Q"/>
                     </constraints>
-                    <string key="text">Samir Khemici est le fondateur d'Objectif Horlogerie, premier centre de formation et d'initiation à l'horlogerie en France. L'objectif? Comprendre comment fonctionne une montre mécanique par la pratique et en seulement une demi-journée. En 2017 il crée OH Selection Paris, un portail de e-commerce proposant des produits accesoires de l'univers horloger. Tous les produits sont testés et approuvés. Lire plus ici...</string>
+                    <string key="text">Samir Khemici est le fondateur d'Objectif Horlogerie, premier centre de formation et d'initiation à l'horlogerie en France. L'objectif? Comprendre comment fonctionne une montre mécanique par la pratique et en seulement une demi-journée. En 2017 il crée OH Selection Paris, un portail de e-commerce proposant des produits accesoires de l'univers horloger. Tous les produits sont testés et approuvés. Lire plus sur notre page "About Us"...</string>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

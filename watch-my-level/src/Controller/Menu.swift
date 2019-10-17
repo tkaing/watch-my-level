@@ -49,7 +49,14 @@ class Menu: UIViewController {
     }
     @IBAction func BT_TX_003(_ sender: UIButton) {
         
-        self.redirectTo(from: self, to: Home())
+        let lo = Loading()
+        
+        self.redirectTo(from: self, to: lo)
+        
+        EventService.default.findAll { (items) in
+            
+            self.redirectTo(from: lo, to: About())
+        }
     }
     @IBAction func BT_TX_004(_ sender: UIButton) {
         
@@ -57,9 +64,20 @@ class Menu: UIViewController {
         
         self.redirectTo(from: self, to: Home())
     }
-    @IBAction func BT_TX_005(_ sender: UIButton) {
-        self.redirectTo(from: self, to: Catalogue())
+    @IBAction func BT_TX_CAT(_ sender: UIButton) {
+        
+        let lo = Loading()
+        
+        self.redirectTo(from: self, to: lo)
+        
+        self.redirectTo(from: lo, to: Catalogue())
+        
+        /*EventService.default.findAll { (items) in
+            
+            
+        }*/
     }
+    
 }
 
 // Menu Extension

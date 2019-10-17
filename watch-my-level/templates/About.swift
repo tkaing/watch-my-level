@@ -1,14 +1,14 @@
 //
-//  CatalogueProduct.swift
+//  About.swift
 //  watch-my-level
 //
-//  Created by Viviana Montiel on 16/10/2019.
+//  Created by Viviana Montiel on 17/10/2019.
 //  Copyright © 2019 wml. All rights reserved.
 //
 
 import UIKit
 
-class CatalogueProduct: UIViewController {
+class About: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
