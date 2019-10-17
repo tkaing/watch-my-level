@@ -10,6 +10,10 @@
 		3F281CFC23584B3C00D365E8 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F281CFB23584B3C00D365E8 /* UserService.swift */; };
 		3F281CFE23584B5100D365E8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F281CFD23584B5100D365E8 /* UserModel.swift */; };
 		3F281D0023585AC900D365E8 /* ActiveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F281CFF23585AC900D365E8 /* ActiveManager.swift */; };
+		3F281D0323588E3E00D365E8 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F281D0123588E3E00D365E8 /* CardCell.swift */; };
+		3F281D0423588E3E00D365E8 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F281D0223588E3E00D365E8 /* CardCell.xib */; };
+		3F281D062358A3AF00D365E8 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F281D052358A3AF00D365E8 /* CardModel.swift */; };
+		3F281D082358B68B00D365E8 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F281D072358B68B00D365E8 /* CardService.swift */; };
 		3FB5FAAD2357017500D6FE7D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5FAAB2357017500D6FE7D /* Home.swift */; };
 		3FB5FAAE2357017500D6FE7D /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB5FAAC2357017500D6FE7D /* Home.xib */; };
 		3FB5FAB1235707C600D6FE7D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5FAAF235707C600D6FE7D /* Menu.swift */; };
@@ -48,6 +52,10 @@
 		3F281CFB23584B3C00D365E8 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		3F281CFD23584B5100D365E8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		3F281CFF23585AC900D365E8 /* ActiveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveManager.swift; sourceTree = "<group>"; };
+		3F281D0123588E3E00D365E8 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		3F281D0223588E3E00D365E8 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		3F281D052358A3AF00D365E8 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		3F281D072358B68B00D365E8 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
 		3F91C0502357715100F137FC /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		3F91C0522357716B00F137FC /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		3FB5FAAB2357017500D6FE7D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -125,6 +133,7 @@
 				8F85080223572478005D074F /* Login.xib */,
 				8F850806235756EB005D074F /* SignUp.xib */,
 				8FE50E4723575FA300E8A049 /* GameInfo.xib */,
+				3F281D0223588E3E00D365E8 /* CardCell.xib */,
 				8FE50E4B23575FBC00E8A049 /* GameLevel.xib */,
 				8F8D00EC2357B840001C39E9 /* Catalogue.xib */,
 				8F8D00F22357C4D8001C39E9 /* CatalogueProduct.xib */,
@@ -147,6 +156,7 @@
 			children = (
 				3FB5FAB923574E5900D6FE7D /* EventModel.swift */,
 				3F281CFD23584B5100D365E8 /* UserModel.swift */,
+				3F281D052358A3AF00D365E8 /* CardModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +174,7 @@
 				3FB5FAAB2357017500D6FE7D /* Home.swift */,
 				3FB5FAAF235707C600D6FE7D /* Menu.swift */,
 				3FBE0D5A235786EE00F4EA82 /* Loading.swift */,
+				3F281D0123588E3E00D365E8 /* CardCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +227,7 @@
 				3FBE0D542357783200F4EA82 /* RequestService.swift */,
 				3FBE0D582357787900F4EA82 /* EventService.swift */,
 				3F281CFB23584B3C00D365E8 /* UserService.swift */,
+				3F281D072358B68B00D365E8 /* CardService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -296,6 +308,7 @@
 				3FB5FAAE2357017500D6FE7D /* Home.xib in Resources */,
 				3FB5FAB2235707C600D6FE7D /* Menu.xib in Resources */,
 				8F8D00EE2357B840001C39E9 /* Catalogue.xib in Resources */,
+				3F281D0423588E3E00D365E8 /* CardCell.xib in Resources */,
 				3FB5FAB82357400E00D6FE7D /* Events.xib in Resources */,
 				3FBDA2D42356E69D00D16992 /* Assets.xcassets in Resources */,
 				3FBE0D5D235786EE00F4EA82 /* Loading.xib in Resources */,
@@ -354,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FB5FAB72357400E00D6FE7D /* Events.swift in Sources */,
+				3F281D062358A3AF00D365E8 /* CardModel.swift in Sources */,
 				3FB5FAB423572E0100D6FE7D /* MenuManager.swift in Sources */,
 				8FE50E4823575FA300E8A049 /* GameInfo.swift in Sources */,
 				3FBDA2CF2356E69C00D16992 /* ViewController.swift in Sources */,
@@ -367,8 +381,10 @@
 				3FB5FAAD2357017500D6FE7D /* Home.swift in Sources */,
 				3FB5FABA23574E5900D6FE7D /* EventModel.swift in Sources */,
 				3FB5FAB1235707C600D6FE7D /* Menu.swift in Sources */,
+				3F281D0323588E3E00D365E8 /* CardCell.swift in Sources */,
 				3F281CFC23584B3C00D365E8 /* UserService.swift in Sources */,
 				3FBE0D552357783200F4EA82 /* RequestService.swift in Sources */,
+				3F281D082358B68B00D365E8 /* CardService.swift in Sources */,
 				3FBDA2CD2356E69C00D16992 /* AppDelegate.swift in Sources */,
 				3FB5FABE2357520A00D6FE7D /* ColorManager.swift in Sources */,
 				8F8D00F32357C4D8001C39E9 /* CatalogueProduct.swift in Sources */,

@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // *** Home ***
-        let homeController = Home()
+        let homeController = GameLevel()
         let navigationController = UINavigationController(rootViewController: homeController)
         
         // *** Navigation ***
