@@ -107,9 +107,9 @@
 		3FB5FAA42356E92200D6FE7D /* src */ = {
 			isa = PBXGroup;
 			children = (
-				3FBE0D532357782600F4EA82 /* Service */,
 				3FB5FAAA2356E9D400D6FE7D /* Controller */,
 				3FB5FAA92356E99F00D6FE7D /* Model */,
+				3FBE0D532357782600F4EA82 /* Service */,
 				3FB5FAA82356E97700D6FE7D /* Manager */,
 			);
 			path = src;

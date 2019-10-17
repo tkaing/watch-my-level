@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,6 +14,7 @@
             <connections>
                 <outlet property="BT_IC_LEFT" destination="xYq-BA-0rN" id="0jY-ms-QVb"/>
                 <outlet property="BT_IC_RIGHT" destination="K7B-Nh-HVN" id="aAM-9f-o0B"/>
+                <outlet property="TX_DESCRIPTION" destination="LVX-hj-4xy" id="NSX-7m-tGD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -65,12 +68,12 @@
                 </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="LVX-hj-4xy">
                     <rect key="frame" x="20" y="707" width="374" height="150"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="ew2-Lh-y5Q"/>
                     </constraints>
                     <string key="text">Samir Khemici est le fondateur d'Objectif Horlogerie, premier centre de formation et d'initiation à l'horlogerie en France. L'objectif? Comprendre comment fonctionne une montre mécanique par la pratique et en seulement une demi-journée. En 2017 il crée OH Selection Paris, un portail de e-commerce proposant des produits accesoires de l'univers horloger. Tous les produits sont testés et approuvés. Lire plus ici...</string>
-                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
@@ -87,9 +90,7 @@
                         <constraint firstAttribute="width" constant="60" id="t6C-bL-5na"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="45"/>
-                    <state key="normal" title="«">
-                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
-                    </state>
+                    <state key="normal" title="«"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7B-Nh-HVN">
                     <rect key="frame" x="334" y="44" width="60" height="300"/>
@@ -98,9 +99,7 @@
                         <constraint firstAttribute="height" constant="300" id="lTJ-0v-cXg"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="45"/>
-                    <state key="normal" title="»">
-                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
-                    </state>
+                    <state key="normal" title="»"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHd-ge-sc7">
                     <rect key="frame" x="172" y="591" width="70" height="60"/>
