@@ -14,14 +14,13 @@ public class RequestService<T: ImmutableMappable>
     let API_DEFAULT = "http://localhost:6789/"
     
     func create(address: String, object: T, complete: @escaping (Int) -> Void) {
-        
-        Alamofire.request(address, method: .put, parameters: object.toJSON())
-            .responseJSON { (request) in
-                
-                guard let status = request.response?.statusCode
-                    else { return }
-                
-                complete(status)
+
+        Alamofire.request(address, method: .post, parameters: object.toJSON(), encoding: JSONEncoding.default).responseJSON { (request) in
+            
+            guard let status = request.response?.statusCode
+                else { return }
+            
+            complete(status)
         }
     }
     
@@ -50,15 +49,8 @@ public class RequestService<T: ImmutableMappable>
         
         var objects: [T] = []
         
-        Alamofire.request(address, method: .post, parameters: parameters)
+        Alamofire.request(address, method: .post, parameters: parameters, encoding: JSONEncoding.default)
             .responseJSON { (request) in
-                
-                /*guard let status = request.response?.statusCode
-                 else { return }
-                 
-                 complete(status)*/
-                
-                // -------------
                 
                 guard let items = request.value as? [[String: Any]]
                     else { return }
@@ -100,7 +92,7 @@ public class RequestService<T: ImmutableMappable>
     
     func update(address: String, object: T, complete: @escaping (Int) -> Void) {
         
-        Alamofire.request(address, method: .patch, parameters: object.toJSON()).responseJSON { (request) in
+        Alamofire.request(address, method: .put, parameters: object.toJSON(), encoding: JSONEncoding.default).responseJSON { (request) in
             
             guard let status = request.response?.statusCode
                 else { return }

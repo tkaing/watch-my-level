@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Login" customModule="watch_my_level" customModuleProvider="target">
             <connections>
+                <outlet property="WG_PASSWORD" destination="G1a-tQ-hwj" id="KdN-uE-O90"/>
+                <outlet property="WG_USERNAME" destination="pmU-g8-hSB" id="oWK-12-Idn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="cFg-xO-lf6"/>
             </connections>
         </placeholder>
@@ -30,7 +35,7 @@
                     </constraints>
                 </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pmU-g8-hSB">
-                    <rect key="frame" x="50" y="436" width="314" height="34"/>
+                    <rect key="frame" x="50" y="436" width="314" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -45,12 +50,12 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G1a-tQ-hwj">
-                    <rect key="frame" x="50" y="536" width="314" height="34"/>
+                    <rect key="frame" x="50" y="532" width="314" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" textContentType="password"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDM-0m-mIJ">
-                    <rect key="frame" x="50" y="505" width="314" height="21"/>
+                    <rect key="frame" x="50" y="501" width="314" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="YoU-EG-U6T"/>
                     </constraints>
@@ -59,12 +64,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jj-uR-vnB">
-                    <rect key="frame" x="171" y="600" width="72" height="38"/>
+                    <rect key="frame" x="171.5" y="592" width="71" height="39"/>
                     <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="23"/>
                     <state key="normal" title="LOGIN">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
                     </state>
+                    <connections>
+                        <action selector="BT_SUBMIT:" destination="-1" eventType="touchUpInside" id="2zZ-Cb-UKv"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

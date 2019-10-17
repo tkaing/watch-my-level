@@ -28,9 +28,11 @@ class Menu: UIViewController {
     
     // Menu Redirection
     @IBAction func BT_IG_SYM(_ sender: UIButton) {
+        
         self.redirectTo(from: self, to: Home())
     }
     @IBAction func BT_TX_001(_ sender: UIButton) {
+        
         self.redirectTo(from: self, to: Home())
     }
     @IBAction func BT_TX_002(_ sender: UIButton) {
@@ -45,9 +47,13 @@ class Menu: UIViewController {
         }
     }
     @IBAction func BT_TX_003(_ sender: UIButton) {
+        
         self.redirectTo(from: self, to: Home())
     }
     @IBAction func BT_TX_004(_ sender: UIButton) {
+        
+        ActiveManager.activeUser = nil
+        
         self.redirectTo(from: self, to: Home())
     }
 }

@@ -12,7 +12,6 @@ import SideMenu
 class Home: UIViewController {
 
     @IBOutlet var BT_IC_LEFT: UIButton!
-    
     @IBOutlet var BT_IC_RIGHT: UIButton!
     
     override func viewDidLoad() {
