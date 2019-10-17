@@ -8,81 +8,91 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameInfo" customModule="watch_my_level" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameInfo" customModule="watch_my_level" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="v1m-zH-AZ8" id="6uw-mD-L6l"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="v1m-zH-AZ8">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEVEL 1 : CADRAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xug-Z7-heu">
-                    <rect key="frame" x="71" y="287" width="272" height="37"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="LEVEL 1 : CADRAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xug-Z7-heu">
+                    <rect key="frame" x="71" y="303" width="272" height="37"/>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="31"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="augarde" translatesAutoresizingMaskIntoConstraints="NO" id="06P-g0-rFz">
-                    <rect key="frame" x="75" y="114" width="264" height="128"/>
+                    <rect key="frame" x="20" y="114" width="374" height="128"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="AvX-vp-kZi"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cadran_black_white" translatesAutoresizingMaskIntoConstraints="NO" id="9Q3-hR-MhS">
-                    <rect key="frame" x="20" y="371" width="180" height="130"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="130" id="g6h-A7-gIt"/>
-                    </constraints>
-                </imageView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lhA-Fb-K6X">
-                    <rect key="frame" x="214" y="371" width="180" height="130"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="130" id="vQV-mo-qjg"/>
-                    </constraints>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalisation du cadran" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTo-Yr-lmx">
-                    <rect key="frame" x="20" y="571" width="374" height="32"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Personalisation du cadran" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTo-Yr-lmx">
+                    <rect key="frame" x="20" y="600" width="374" height="31.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mkj-0h-2oV">
-                    <rect key="frame" x="20" y="638" width="186" height="128"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Augarde permet la personnalisation du cadran. Ci-contre, voici les personnalisations possibles. Chosissez votre cadran préféré." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mkj-0h-2oV">
+                    <rect key="frame" x="30" y="651.5" width="176" height="200"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="176" id="Nc2-EI-27N"/>
+                        <constraint firstAttribute="height" constant="200" id="Yyq-gg-Emf"/>
+                    </constraints>
                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I5W-Y2-FWC">
-                    <rect key="frame" x="214" y="638" width="180" height="130"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="montre-2" translatesAutoresizingMaskIntoConstraints="NO" id="I5W-Y2-FWC">
+                    <rect key="frame" x="214" y="648" width="180" height="180"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="130" id="bcG-Ix-ESY"/>
-                        <constraint firstAttribute="width" constant="180" id="ynF-AZ-ZRW"/>
+                        <constraint firstAttribute="height" constant="180" id="ah1-Pc-XSm"/>
                     </constraints>
                 </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="montre-1" translatesAutoresizingMaskIntoConstraints="NO" id="9Q3-hR-MhS">
+                    <rect key="frame" x="14" y="360" width="200" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="g6h-A7-gIt"/>
+                        <constraint firstAttribute="width" constant="200" id="nxH-AK-1dk"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhA-Fb-K6X">
+                    <rect key="frame" x="214" y="360" width="180" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="vQV-mo-qjg"/>
+                    </constraints>
+                    <string key="text">Le cadran est trop bien, il a été créé en 1930, l'horlogerie a développé un savoir-faire particulier. Augarde a tenu a avoir un cadran atypique, carré à bords ronds, etc.</string>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="06P-g0-rFz" firstAttribute="leading" secondItem="8U1-iw-UTr" secondAttribute="leading" constant="75" id="7iX-SD-dwx"/>
-                <constraint firstItem="8U1-iw-UTr" firstAttribute="bottom" secondItem="mkj-0h-2oV" secondAttribute="bottom" constant="96" id="7xL-Qm-yST"/>
-                <constraint firstItem="I5W-Y2-FWC" firstAttribute="top" secondItem="mkj-0h-2oV" secondAttribute="top" id="8fS-jd-7JA"/>
-                <constraint firstItem="8U1-iw-UTr" firstAttribute="trailing" secondItem="I5W-Y2-FWC" secondAttribute="trailing" constant="20" id="DUO-UX-uAH"/>
-                <constraint firstItem="8U1-iw-UTr" firstAttribute="trailing" secondItem="PTo-Yr-lmx" secondAttribute="trailing" constant="20" id="E2b-rR-9cE"/>
-                <constraint firstItem="lhA-Fb-K6X" firstAttribute="top" secondItem="xug-Z7-heu" secondAttribute="bottom" constant="47" id="HWk-hy-cAg"/>
-                <constraint firstItem="06P-g0-rFz" firstAttribute="centerX" secondItem="xug-Z7-heu" secondAttribute="centerX" id="KgA-FA-XyE"/>
-                <constraint firstItem="PTo-Yr-lmx" firstAttribute="centerX" secondItem="v1m-zH-AZ8" secondAttribute="centerX" id="P3x-JL-Nzd"/>
-                <constraint firstItem="PTo-Yr-lmx" firstAttribute="top" secondItem="9Q3-hR-MhS" secondAttribute="bottom" constant="70" id="QSC-kl-0fy"/>
-                <constraint firstItem="PTo-Yr-lmx" firstAttribute="leading" secondItem="8U1-iw-UTr" secondAttribute="leading" constant="20" id="Sz8-hb-LuQ"/>
-                <constraint firstItem="06P-g0-rFz" firstAttribute="top" secondItem="8U1-iw-UTr" secondAttribute="top" constant="70" id="T9g-lT-yvB"/>
-                <constraint firstItem="I5W-Y2-FWC" firstAttribute="leading" secondItem="mkj-0h-2oV" secondAttribute="trailing" constant="8" id="Yoe-rl-1Ke"/>
-                <constraint firstItem="xug-Z7-heu" firstAttribute="top" secondItem="06P-g0-rFz" secondAttribute="bottom" constant="45" id="f7i-Wc-dRO"/>
-                <constraint firstItem="06P-g0-rFz" firstAttribute="centerX" secondItem="v1m-zH-AZ8" secondAttribute="centerX" id="kaK-so-qWb"/>
-                <constraint firstItem="mkj-0h-2oV" firstAttribute="top" secondItem="PTo-Yr-lmx" secondAttribute="bottom" constant="35" id="q4T-Yy-kBF"/>
-                <constraint firstItem="9Q3-hR-MhS" firstAttribute="top" secondItem="xug-Z7-heu" secondAttribute="bottom" constant="47" id="vRa-Su-Gw0"/>
+                <constraint firstItem="PTo-Yr-lmx" firstAttribute="centerX" secondItem="v1m-zH-AZ8" secondAttribute="centerX" id="0dM-kf-xVk"/>
+                <constraint firstItem="9Q3-hR-MhS" firstAttribute="top" secondItem="xug-Z7-heu" secondAttribute="bottom" constant="20" id="3kL-77-Qwp"/>
+                <constraint firstItem="PTo-Yr-lmx" firstAttribute="leading" secondItem="8U1-iw-UTr" secondAttribute="leading" constant="20" id="8bO-0j-zJF"/>
+                <constraint firstItem="xug-Z7-heu" firstAttribute="top" secondItem="06P-g0-rFz" secondAttribute="bottom" constant="61" id="9gi-cL-n14"/>
+                <constraint firstItem="I5W-Y2-FWC" firstAttribute="top" secondItem="PTo-Yr-lmx" secondAttribute="bottom" constant="16.5" id="Dwb-D8-KqE"/>
+                <constraint firstItem="mkj-0h-2oV" firstAttribute="leading" secondItem="8U1-iw-UTr" secondAttribute="leading" constant="30" id="LGF-2x-CZm"/>
+                <constraint firstItem="8U1-iw-UTr" firstAttribute="trailing" secondItem="PTo-Yr-lmx" secondAttribute="trailing" constant="20" id="NGi-Cw-0So"/>
+                <constraint firstItem="xug-Z7-heu" firstAttribute="centerX" secondItem="v1m-zH-AZ8" secondAttribute="centerX" id="TW6-Kb-5D1"/>
+                <constraint firstItem="lhA-Fb-K6X" firstAttribute="top" secondItem="xug-Z7-heu" secondAttribute="bottom" constant="20" id="ZGq-5J-qKC"/>
+                <constraint firstItem="PTo-Yr-lmx" firstAttribute="top" secondItem="xug-Z7-heu" secondAttribute="bottom" constant="260" id="aQH-4s-HDS"/>
+                <constraint firstItem="lhA-Fb-K6X" firstAttribute="leading" secondItem="9Q3-hR-MhS" secondAttribute="trailing" id="c9d-GU-Sz8"/>
+                <constraint firstItem="06P-g0-rFz" firstAttribute="top" secondItem="8U1-iw-UTr" secondAttribute="top" constant="70" id="jpf-yb-FuM"/>
+                <constraint firstItem="06P-g0-rFz" firstAttribute="trailing" secondItem="lhA-Fb-K6X" secondAttribute="trailing" id="lHj-Ur-Dzw"/>
+                <constraint firstItem="I5W-Y2-FWC" firstAttribute="trailing" secondItem="PTo-Yr-lmx" secondAttribute="trailing" id="shx-NH-sWm"/>
+                <constraint firstItem="I5W-Y2-FWC" firstAttribute="leading" secondItem="lhA-Fb-K6X" secondAttribute="leading" id="sjs-Fg-93K"/>
+                <constraint firstItem="mkj-0h-2oV" firstAttribute="top" secondItem="PTo-Yr-lmx" secondAttribute="bottom" constant="20" id="uzj-S8-UAz"/>
+                <constraint firstItem="I5W-Y2-FWC" firstAttribute="leading" secondItem="mkj-0h-2oV" secondAttribute="trailing" constant="8" symbolic="YES" id="wkh-02-ghQ"/>
+                <constraint firstItem="06P-g0-rFz" firstAttribute="leading" secondItem="v1m-zH-AZ8" secondAttribute="leading" constant="20" id="yFm-3O-e0b"/>
+                <constraint firstAttribute="trailing" secondItem="06P-g0-rFz" secondAttribute="trailing" constant="20" id="zHL-tD-ZZS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="8U1-iw-UTr"/>
             <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
@@ -90,6 +100,7 @@
     </objects>
     <resources>
         <image name="augarde" width="800" height="523"/>
-        <image name="cadran_black_white" width="122" height="122"/>
+        <image name="montre-1" width="420" height="452"/>
+        <image name="montre-2" width="1449" height="2048"/>
     </resources>
 </document>
