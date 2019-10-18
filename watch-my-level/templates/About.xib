@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="About" customModule="watch_my_level" customModuleProvider="target">
+            <connections>
+                <outlet property="TX_DESCRIPTION" destination="Wsd-bb-fXQ" id="QO7-gW-FgJ"/>
+                <outlet property="view" destination="NRX-hP-rbV" id="huz-7O-zoU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="NRX-hP-rbV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmj-ql-IXQ">
+                    <rect key="frame" x="137.5" y="287" width="139" height="37"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="31"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="augarde" translatesAutoresizingMaskIntoConstraints="NO" id="Mrd-0N-t6u">
+                    <rect key="frame" x="75" y="114" width="264" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="ri0-93-F3v"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Wsd-bb-fXQ">
+                    <rect key="frame" x="75" y="354" width="264" height="237"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <string key="text">Samir Khemici est le fondateur d'Objectif Horlogerie, premier centre de formation et d'initiation à l'horlogerie en France. L'objectif? Comprendre comment fonctionne une montre mécanique par la pratique et en seulement une demi-journée. En 2017 il crée OH Selection Paris, un portail de e-commerce proposant des produits accesoires de l'univers horloger. Tous les produits sont testés et approuvés.</string>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="samir" translatesAutoresizingMaskIntoConstraints="NO" id="lPj-A3-dDu">
+                    <rect key="frame" x="75" y="562" width="264" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="J18-2d-cMD"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="iwO-iL-Ugy" firstAttribute="bottom" secondItem="Wsd-bb-fXQ" secondAttribute="bottom" constant="271" id="0PT-PA-qaM"/>
+                <constraint firstItem="Wsd-bb-fXQ" firstAttribute="top" secondItem="cmj-ql-IXQ" secondAttribute="bottom" constant="30" id="1Cv-7E-0PZ"/>
+                <constraint firstItem="Mrd-0N-t6u" firstAttribute="centerX" secondItem="cmj-ql-IXQ" secondAttribute="centerX" id="5Z8-Yt-KFO"/>
+                <constraint firstItem="Mrd-0N-t6u" firstAttribute="leading" secondItem="iwO-iL-Ugy" secondAttribute="leading" constant="75" id="A1S-lo-87d"/>
+                <constraint firstItem="lPj-A3-dDu" firstAttribute="bottom" secondItem="iwO-iL-Ugy" secondAttribute="bottom" id="MLh-b3-9eb"/>
+                <constraint firstItem="lPj-A3-dDu" firstAttribute="trailing" secondItem="Wsd-bb-fXQ" secondAttribute="trailing" id="QTY-b2-QWP"/>
+                <constraint firstItem="Mrd-0N-t6u" firstAttribute="centerX" secondItem="NRX-hP-rbV" secondAttribute="centerX" id="Rth-Z9-i6N"/>
+                <constraint firstItem="Wsd-bb-fXQ" firstAttribute="centerX" secondItem="NRX-hP-rbV" secondAttribute="centerX" id="SUS-VA-MmE"/>
+                <constraint firstItem="cmj-ql-IXQ" firstAttribute="top" secondItem="Mrd-0N-t6u" secondAttribute="bottom" constant="45" id="VFw-TR-PZP"/>
+                <constraint firstItem="Mrd-0N-t6u" firstAttribute="top" secondItem="iwO-iL-Ugy" secondAttribute="top" constant="70" id="gKJ-El-grj"/>
+                <constraint firstItem="lPj-A3-dDu" firstAttribute="centerX" secondItem="NRX-hP-rbV" secondAttribute="centerX" id="pwE-gI-HUH"/>
+                <constraint firstItem="Wsd-bb-fXQ" firstAttribute="trailing" secondItem="Mrd-0N-t6u" secondAttribute="trailing" id="qGU-0B-YLR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="iwO-iL-Ugy"/>
+            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="augarde" width="800" height="523"/>
+        <image name="samir" width="548" height="526"/>
+    </resources>
+</document>
