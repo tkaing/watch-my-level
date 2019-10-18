@@ -11,9 +11,8 @@ import SideMenu
 
 class Home: UIViewController {
 
-    @IBOutlet var BT_IC_LEFT: UIButton!
-    @IBOutlet var BT_IC_RIGHT: UIButton!
-    @IBOutlet var TX_DESCRIPTION: UITextView!
+    //@IBOutlet var BT_IC_LEFT: UIButton!
+    //@IBOutlet var BT_IC_RIGHT: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +40,11 @@ class Home: UIViewController {
             
             // Page Classement Utilisateurs
         }
+    }
+    
+    @IBAction func BT_IC_LOGIN(_ sender: UIButton) {
+        
+        self.redirectTo(from: self, to: Login())
     }
 }
 
@@ -81,13 +85,10 @@ extension Home {
         self.navigationItem.title = "Home"
         
         // ST Front
-        self.setImage(BT: self.BT_IC_LEFT)
-        self.setImage(BT: self.BT_IC_RIGHT)
-        applyShadow(BT: BT_IC_LEFT)
-        applyShadow(BT: BT_IC_RIGHT)
-        
-        // ST Disable
-        self.TX_DESCRIPTION.isUserInteractionEnabled = false
+        //self.setImage(BT: self.BT_IC_LEFT)
+        //self.setImage(BT: self.BT_IC_RIGHT)
+        //applyShadow(BT: BT_IC_LEFT)
+        //applyShadow(BT: BT_IC_RIGHT)
     }
     
     func setImage(BT: UIButton) {
