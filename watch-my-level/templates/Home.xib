@@ -66,7 +66,7 @@
                         <constraint firstAttribute="height" constant="100" id="2Se-s0-Prl"/>
                         <constraint firstAttribute="width" constant="100" id="Xl5-Gs-oGU"/>
                     </constraints>
-                    <state key="normal" title="Button" image="game-1"/>
+                    <state key="normal" title="Button" image="new_game"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHd-ge-sc7">
                     <rect key="frame" x="172" y="597" width="70" height="60"/>
@@ -74,7 +74,7 @@
                         <constraint firstAttribute="width" constant="70" id="Cl9-8e-G0c"/>
                         <constraint firstAttribute="height" constant="60" id="Lld-8k-ry0"/>
                     </constraints>
-                    <state key="normal" image="montre-3">
+                    <state key="normal" image="new_catalogue">
                         <attributedString key="attributedTitle"/>
                     </state>
                 </button>
@@ -101,7 +101,7 @@
                         <constraint firstAttribute="height" constant="100" id="vVt-cD-Dhc"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <state key="normal" title="Login" image="login"/>
+                    <state key="normal" title="Login" image="new_sign_in"/>
                     <connections>
                         <action selector="BT_IC_LOGIN:" destination="-1" eventType="touchUpInside" id="GPp-Hv-Ewe"/>
                     </connections>
@@ -138,9 +138,9 @@
     </objects>
     <resources>
         <image name="dot" width="512" height="512"/>
-        <image name="game-1" width="600" height="600"/>
-        <image name="login" width="512" height="512"/>
-        <image name="montre-3" width="512" height="512"/>
+        <image name="new_catalogue" width="512" height="512"/>
+        <image name="new_game" width="512" height="512"/>
+        <image name="new_sign_in" width="448" height="512"/>
         <image name="puzzle_1" width="1280" height="972"/>
     </resources>
 </document>

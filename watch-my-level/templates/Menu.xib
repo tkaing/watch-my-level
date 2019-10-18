@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,7 +48,7 @@
                                         <constraint firstAttribute="width" constant="50" id="HSK-GI-PNd"/>
                                         <constraint firstAttribute="height" constant="50" id="R3R-rM-da3"/>
                                     </constraints>
-                                    <state key="normal" backgroundImage="game">
+                                    <state key="normal" backgroundImage="new_game">
                                         <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                 </button>
@@ -56,7 +58,7 @@
                                         <constraint firstAttribute="width" constant="50" id="Jk6-Jn-r7d"/>
                                         <constraint firstAttribute="height" constant="50" id="f6P-Xc-gyu"/>
                                     </constraints>
-                                    <state key="normal" backgroundImage="calendar"/>
+                                    <state key="normal" backgroundImage="new_events"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHI-ER-f4k">
                                     <rect key="frame" x="40" y="290" width="50" height="50"/>
@@ -64,14 +66,14 @@
                                         <constraint firstAttribute="width" constant="50" id="3qb-9k-6cK"/>
                                         <constraint firstAttribute="height" constant="50" id="X4Q-WC-dsW"/>
                                     </constraints>
-                                    <state key="normal" image="about-us"/>
+                                    <state key="normal" image="new_about_us"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4Y-Ip-LF1">
                                     <rect key="frame" x="110" y="170" width="304" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="Kju-hA-z87"/>
                                     </constraints>
-                                    <state key="normal" title="Play now !"/>
+                                    <state key="normal" title="Jouer maintenant !"/>
                                     <connections>
                                         <action selector="BT_TX_001:" destination="-1" eventType="touchUpInside" id="EY0-0G-XSL"/>
                                     </connections>
@@ -81,7 +83,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="zsD-Ok-OMr"/>
                                     </constraints>
-                                    <state key="normal" title="Events"/>
+                                    <state key="normal" title="Événements"/>
                                     <connections>
                                         <action selector="BT_TX_002:" destination="-1" eventType="touchUpInside" id="Qha-a7-pnp"/>
                                     </connections>
@@ -91,7 +93,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="19K-AA-XId"/>
                                     </constraints>
-                                    <state key="normal" title="About us"/>
+                                    <state key="normal" title="À propos"/>
                                     <connections>
                                         <action selector="BT_TX_003:" destination="-1" eventType="touchUpInside" id="MIH-0r-ei5"/>
                                     </connections>
@@ -112,13 +114,33 @@
                                         <constraint firstAttribute="width" constant="50" id="5eS-PC-7w2"/>
                                         <constraint firstAttribute="height" constant="50" id="cXe-IN-U2X"/>
                                     </constraints>
-                                    <state key="normal" title="Button" image="montre-3"/>
+                                    <state key="normal" title="Button" image="new_catalogue"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrh-jB-oJm">
+                                    <rect key="frame" x="40" y="410" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="ErZ-5c-nya"/>
+                                        <constraint firstAttribute="height" constant="50" id="bbA-Rd-wTg"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="login"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQv-HN-hj0">
+                                    <rect key="frame" x="110" y="410" width="64" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Oqi-r1-6PB"/>
+                                    </constraints>
+                                    <state key="normal" title="S'inscrire"/>
+                                    <connections>
+                                        <action selector="BT_TX_SIGN:" destination="-1" eventType="touchUpInside" id="cEJ-0a-YYb"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="K3b-Qf-zYM" firstAttribute="top" secondItem="Ydv-5B-EYL" secondAttribute="top" constant="40" id="4oe-4i-nj1"/>
                                 <constraint firstItem="Cc1-9c-Iex" firstAttribute="leading" secondItem="a6i-hM-puW" secondAttribute="trailing" constant="20" id="4qM-8R-mAy"/>
+                                <constraint firstItem="jrh-jB-oJm" firstAttribute="leading" secondItem="Ydv-5B-EYL" secondAttribute="leading" constant="40" id="6TC-hT-ACA"/>
+                                <constraint firstItem="jrh-jB-oJm" firstAttribute="top" secondItem="a6i-hM-puW" secondAttribute="bottom" constant="10" id="FuW-GK-9uu"/>
                                 <constraint firstItem="E8v-uB-jyc" firstAttribute="leading" secondItem="Ydv-5B-EYL" secondAttribute="leading" constant="40" id="G3p-c4-68F"/>
                                 <constraint firstItem="nHI-ER-f4k" firstAttribute="leading" secondItem="Ydv-5B-EYL" secondAttribute="leading" constant="40" id="G6x-lJ-S1F"/>
                                 <constraint firstItem="E8v-uB-jyc" firstAttribute="top" secondItem="K3b-Qf-zYM" secondAttribute="bottom" constant="30" id="GcF-t4-vkX"/>
@@ -137,8 +159,10 @@
                                 <constraint firstItem="Z4Y-Ip-LF1" firstAttribute="leading" secondItem="E8v-uB-jyc" secondAttribute="trailing" constant="20" id="dzh-hn-LJC"/>
                                 <constraint firstItem="TLJ-HI-ogu" firstAttribute="top" secondItem="E8v-uB-jyc" secondAttribute="bottom" constant="10" id="evh-Th-Krr"/>
                                 <constraint firstItem="Q5j-rf-who" firstAttribute="leading" secondItem="nHI-ER-f4k" secondAttribute="trailing" constant="20" id="fFu-1V-sjv"/>
+                                <constraint firstItem="MQv-HN-hj0" firstAttribute="leading" secondItem="jrh-jB-oJm" secondAttribute="trailing" constant="20" id="g7T-ia-RKx"/>
                                 <constraint firstAttribute="height" constant="500" id="k2R-nz-2Io"/>
                                 <constraint firstItem="K3b-Qf-zYM" firstAttribute="centerX" secondItem="Ydv-5B-EYL" secondAttribute="centerX" id="lcx-QU-x0L"/>
+                                <constraint firstItem="MQv-HN-hj0" firstAttribute="top" secondItem="Cc1-9c-Iex" secondAttribute="bottom" constant="10" id="xwh-pZ-7ct"/>
                                 <constraint firstItem="Nfl-Gw-aJf" firstAttribute="leading" secondItem="TLJ-HI-ogu" secondAttribute="trailing" constant="20" id="zVr-Mz-q5O"/>
                             </constraints>
                         </view>
@@ -164,10 +188,11 @@
         </view>
     </objects>
     <resources>
-        <image name="about-us" width="530" height="319"/>
         <image name="augarde" width="800" height="523"/>
-        <image name="calendar" width="256" height="256"/>
-        <image name="game" width="512" height="512"/>
-        <image name="montre-3" width="512" height="512"/>
+        <image name="login" width="512" height="512"/>
+        <image name="new_about_us" width="512" height="512"/>
+        <image name="new_catalogue" width="512" height="512"/>
+        <image name="new_events" width="512" height="512"/>
+        <image name="new_game" width="512" height="512"/>
     </resources>
 </document>

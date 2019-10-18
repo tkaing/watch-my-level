@@ -85,8 +85,9 @@ class Menu: UIViewController {
             self.redirectTo(from: lo, to: to)
         }
     }
-    
-    
+    @IBAction func BT_TX_SIGN(_ sender: UIButton) {
+        self.redirectTo(from: self, to: SignUp())
+    }
 }
 
 // Menu Extension
