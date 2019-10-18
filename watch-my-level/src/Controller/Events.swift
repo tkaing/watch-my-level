@@ -13,7 +13,7 @@ class Events: UIViewController {
     
     @IBOutlet var table: UITableView!
     
-    public var items: [String] = []
+    public var events: [Event] = []
     
     public var cellID = "cellID"
     
@@ -61,10 +61,6 @@ extension Events {
         
         // ST Table
         self.initTable()
-        
-        // ST Front
-        
-        // --------
     }
     
     func setImage(BT: UIButton) {
@@ -84,15 +80,17 @@ extension Events: UITableViewDelegate, UITableViewDataSource {
     
     // Count Cells
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count
+        return self.events.count
     }
     
     // Cell Content
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell? = self.table.dequeueReusableCell(withIdentifier: self.cellID)
-        let name: String = self.items[indexPath.row]
-        print(name)
-        cell?.textLabel?.text = name
+        
+        let title: String = self.events[indexPath.row].title
+        
+        cell?.textLabel?.text = title
+        
         return cell!
     }
     

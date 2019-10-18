@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,12 +15,12 @@
         <tableViewCell contentMode="scaleToFill" restorationIdentifier="PRODUCT_CELL_ID" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="CatalogueTableViewCell" customModule="watch_my_level" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="416" height="116"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="416" height="116"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="115.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrW-yf-TD4">
-                        <rect key="frame" x="124" y="15" width="282" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrW-yf-TD4">
+                        <rect key="frame" x="124" y="15" width="212" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -30,13 +32,22 @@
                             <constraint firstAttribute="height" constant="112" id="lbK-rd-vzV"/>
                         </constraints>
                     </imageView>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing zefzn  vzozd c zeignsv kejfna." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TRa-GC-5Cc">
-                        <rect key="frame" x="139" y="36" width="267" height="74"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing zefzn  vzozd c zeignsv kejfna." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TRa-GC-5Cc">
+                        <rect key="frame" x="124" y="36" width="282" height="74"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucJ-sz-6UE">
+                        <rect key="frame" x="346" y="15" width="50" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="yPc-u8-lWI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="udH-EO-qNd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="9LM-Py-OWS"/>
@@ -44,16 +55,20 @@
                     <constraint firstItem="KrW-yf-TD4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="LON-1t-ZRB"/>
                     <constraint firstAttribute="trailing" secondItem="TRa-GC-5Cc" secondAttribute="trailing" constant="10" id="OP4-WK-8or"/>
                     <constraint firstAttribute="bottom" secondItem="udH-EO-qNd" secondAttribute="bottom" constant="2" id="TnN-el-BbX"/>
-                    <constraint firstAttribute="trailing" secondItem="KrW-yf-TD4" secondAttribute="trailing" constant="10" id="VaG-Cg-SxL"/>
                     <constraint firstItem="TRa-GC-5Cc" firstAttribute="top" secondItem="KrW-yf-TD4" secondAttribute="bottom" id="WML-gu-4I0"/>
-                    <constraint firstItem="TRa-GC-5Cc" firstAttribute="leading" secondItem="udH-EO-qNd" secondAttribute="trailing" constant="25" id="jdg-kp-onf"/>
+                    <constraint firstAttribute="trailing" secondItem="ucJ-sz-6UE" secondAttribute="trailing" constant="20" id="fb3-PN-5MO"/>
+                    <constraint firstItem="ucJ-sz-6UE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="jEd-wc-nFC"/>
+                    <constraint firstItem="TRa-GC-5Cc" firstAttribute="leading" secondItem="udH-EO-qNd" secondAttribute="trailing" constant="10" id="jdg-kp-onf"/>
                     <constraint firstItem="udH-EO-qNd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="k4M-gc-R3Y"/>
                     <constraint firstItem="KrW-yf-TD4" firstAttribute="leading" secondItem="udH-EO-qNd" secondAttribute="trailing" constant="10" id="wJ5-Ah-8QZ"/>
+                    <constraint firstItem="ucJ-sz-6UE" firstAttribute="leading" secondItem="KrW-yf-TD4" secondAttribute="trailing" constant="10" id="yHJ-8D-MO1"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="desc" destination="TRa-GC-5Cc" id="ynB-Cr-5Cf"/>
                 <outlet property="label" destination="KrW-yf-TD4" id="Ybf-Nl-eCx"/>
+                <outlet property="price" destination="ucJ-sz-6UE" id="Bii-6k-a1w"/>
             </connections>
             <point key="canvasLocation" x="207.24637681159422" y="87.723214285714278"/>
         </tableViewCell>

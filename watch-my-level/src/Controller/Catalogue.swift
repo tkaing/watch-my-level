@@ -13,7 +13,7 @@ class Catalogue: UIViewController {
     
     @IBOutlet var table: UITableView!
     
-    public var items: [String] = ["a","b","c"]
+    public var products: [Product] = []
     
     public var cellID = "PRODUCT_CELL_ID"
     
@@ -32,7 +32,7 @@ class Catalogue: UIViewController {
 extension Catalogue {
     
     func initAll() {
-        
+        self.navigationItem.title = "Catalogue"
         self.initPanel()
     }
 }
@@ -70,28 +70,38 @@ extension Catalogue: UITableViewDelegate {}
 extension Catalogue: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return self.products.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cellID, for: indexPath) as! CatalogueTableViewCell
         
-        /*let watch = watchs[indexPath.row]
-        let imageURL = URL(string: watch.image)
-        let imageData = try! Data(contentsOf: imageURL!)
-        cell.watchImageView.image = UIImage(data: imageData)
+        cell.label.text = self.products[indexPath.row].label
+        cell.desc.text = self.products[indexPath.row].description
+        cell.price.text = String(self.products[indexPath.row].price) + " €"
         
-        cell.watchPriceLabel.text = "\(watch.prix)€"
-    
-        cell.watchNameLabel.text = watch.nom*/
-        cell.label.text = items[indexPath.row]
         return cell
     }
     
+    // On Select
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-//        let watch = WatchDetailViewController.newInstance(watch: watchs[indexPath.row], user: self.user)
-//        self.navigationController?.pushViewController(watch, animated: true)
+        guard let id = self.products[indexPath.row].id else {
+            return
+        }
+        
+        let lo = Loading()
+        
+        self.redirectTo(from: self, to: lo)
+        
+        ProductService.default.find(id: String(id)) { (product) in
+            
+            let to = CatalogueProductDetail()
+            
+            to.product = product
+            
+            self.redirectTo(from: lo, to: to)
+        }
     }
-
 }

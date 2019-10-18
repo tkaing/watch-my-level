@@ -11,15 +11,16 @@ import UIKit
 class CatalogueTableViewCell: UITableViewCell {
 
     @IBOutlet var label: UILabel!
+    @IBOutlet var desc: UITextView!
+    @IBOutlet var price: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.desc.isUserInteractionEnabled = false
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }

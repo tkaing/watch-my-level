@@ -11,8 +11,8 @@ import SideMenu
 
 class Home: UIViewController {
 
-    //@IBOutlet var BT_IC_LEFT: UIButton!
-    //@IBOutlet var BT_IC_RIGHT: UIButton!
+    @IBOutlet var BT_LOG: UIButton!
+    @IBOutlet var IG_LOG: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,11 +38,39 @@ class Home: UIViewController {
             
         } else {
             
-            // Page Classement Utilisateurs
+            UserService.default.findAll(complete: { (users) in
+                
+                let to = Ranking()
+                
+                to.users = users
+                
+                self.redirectTo(from: ll, to: to)
+            })
         }
     }
     
     @IBAction func BT_IC_LOGIN(_ sender: UIButton) {
+        
+        self.redirectTo(from: self, to: Login())
+    }
+    
+    @IBAction func BT_TX_CAT(_ sender: UIButton) {
+        
+        let ll = Loading()
+        
+        self.redirectTo(from: self, to: ll)
+        
+        ProductService.default.findAll { (products) in
+            
+            let to = Catalogue()
+            
+            to.products = products
+            
+            self.redirectTo(from: ll, to: to)
+        }
+    }
+    
+    @IBAction func BT_TX_AUT(_ sender: UIButton) {
         
         self.redirectTo(from: self, to: Login())
     }
@@ -80,15 +108,19 @@ extension Home {
     
     func initView() {
         
-        // ST Menu
         self.initPanel()
-        self.navigationItem.title = "Home"
+        self.navigationItem.title = "Watch My Level"
         
-        // ST Front
-        //self.setImage(BT: self.BT_IC_LEFT)
-        //self.setImage(BT: self.BT_IC_RIGHT)
-        //applyShadow(BT: BT_IC_LEFT)
-        //applyShadow(BT: BT_IC_RIGHT)
+        if let currentUser = ActiveManager.activeUser {
+            
+            self.BT_LOG.isHidden = true
+            self.IG_LOG.isHidden = true
+            
+        } else {
+            
+            self.BT_LOG.isHidden = false
+            self.IG_LOG.isHidden = false
+        }
     }
     
     func setImage(BT: UIButton) {

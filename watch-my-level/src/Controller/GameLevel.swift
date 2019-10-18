@@ -13,12 +13,13 @@ class GameLevel: UIViewController {
     
     @IBOutlet var CL_PLATFORM: UICollectionView!
     @IBOutlet var LB_TIME: UILabel!
+    @IBOutlet var RIGHT_BUTTON: UIButton!
     
     public static var level = 1
     
-    var time: Int = 10
-    var minute: Int = 0
-    var second: Int = 10
+    var time: Int = 105
+    var minute: Int = 1
+    var second: Int = 45
     
     var timer: Timer = Timer()
     var first: Bool = false
@@ -59,7 +60,14 @@ class GameLevel: UIViewController {
             
         } else {
             
-            // Page Classement Utilisateurs
+            UserService.default.findAll(complete: { (users) in
+                
+                let to = Ranking()
+                
+                to.users = users
+                
+                self.redirectTo(from: ll, to: to)
+            })
         }
     }
 }
@@ -78,6 +86,9 @@ extension GameLevel {
         self.CL_PLATFORM.delegate = self
         self.CL_PLATFORM.dataSource = self
         self.CL_PLATFORM.register(nib, forCellWithReuseIdentifier: "CardCell")
+        
+        // Right Button
+        GameLevel.level == 3 ? self.RIGHT_BUTTON.setTitle("Classement", for: .normal) : self.RIGHT_BUTTON.setTitle("Niveau Suivant", for: .normal)
     }
 }
 
@@ -132,7 +143,14 @@ extension GameLevel {
                 
             } else {
                 
-                // Page Classement Utilisateurs
+                UserService.default.findAll(complete: { (users) in
+                    
+                    let to = Ranking()
+                    
+                    to.users = users
+                    
+                    self.redirectTo(from: ll, to: to)
+                })
             }
         }))
         
@@ -165,7 +183,7 @@ extension GameLevel {
                         
                         self.timer.invalidate()
                         
-                        self.alert(title: "Féliciation !", message: "Passez au niveau suivant dès maintenant")
+                        self.alert(title: "Féliciations !", message: "Passez au niveau suivant dès maintenant")
                     }
                 }
                 
