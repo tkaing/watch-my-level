@@ -22,15 +22,19 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl5-bB-7RQ">
-                    <rect key="frame" x="30" y="54" width="60.5" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temps :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl5-bB-7RQ">
+                    <rect key="frame" x="40" y="84" width="68" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsw-gX-bn1">
-                    <rect key="frame" x="333" y="54" width="51" height="30"/>
+                    <rect key="frame" x="333" y="81" width="51" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="Suivant"/>
+                    <connections>
+                        <action selector="BT_NEXT:" destination="-1" eventType="touchUpInside" id="7qb-8U-Scg"/>
+                    </connections>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="CardCell" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4kw-ru-F40">
                     <rect key="frame" x="0.0" y="128" width="414" height="734"/>
@@ -42,8 +46,8 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yem-Hb-htT">
-                    <rect key="frame" x="100.5" y="54" width="43" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yem-Hb-htT">
+                    <rect key="frame" x="118" y="84" width="40" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -53,14 +57,14 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4kw-ru-F40" secondAttribute="bottom" id="2t1-XH-oaB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rsw-gX-bn1" secondAttribute="trailing" constant="30" id="41Z-6U-sN7"/>
-                <constraint firstItem="4kw-ru-F40" firstAttribute="top" secondItem="Nl5-bB-7RQ" secondAttribute="bottom" constant="50" id="DKO-k4-qT1"/>
-                <constraint firstItem="Rsw-gX-bn1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="FLL-sg-J7B"/>
+                <constraint firstItem="4kw-ru-F40" firstAttribute="top" secondItem="Nl5-bB-7RQ" secondAttribute="bottom" constant="20" id="DKO-k4-qT1"/>
+                <constraint firstItem="Rsw-gX-bn1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="37" id="FLL-sg-J7B"/>
                 <constraint firstItem="yem-Hb-htT" firstAttribute="leading" secondItem="Nl5-bB-7RQ" secondAttribute="trailing" constant="10" id="c2e-fy-HLu"/>
                 <constraint firstItem="4kw-ru-F40" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nxD-KP-JCs"/>
                 <constraint firstItem="4kw-ru-F40" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="o3f-bB-xXD"/>
-                <constraint firstItem="Nl5-bB-7RQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="qbg-9q-qyH"/>
-                <constraint firstItem="yem-Hb-htT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="sFr-Mq-PlL"/>
-                <constraint firstItem="Nl5-bB-7RQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="sYZ-5k-tZh"/>
+                <constraint firstItem="Nl5-bB-7RQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="qbg-9q-qyH"/>
+                <constraint firstItem="yem-Hb-htT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="sFr-Mq-PlL"/>
+                <constraint firstItem="Nl5-bB-7RQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="sYZ-5k-tZh"/>
                 <constraint firstItem="4kw-ru-F40" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uK1-xI-BGk"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

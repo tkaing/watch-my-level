@@ -88,6 +88,30 @@ public class CardService: RequestService<Card> {
         }
     }
     
+    public func findByLevel(id: Int, complete: @escaping ([Card]) -> Void) {
+        
+        let route = self.API_DEFAULT + self.ROUTE_BASE + "shuffledLevel/" + String(id)
+        
+        var objects: [Card] = []
+        
+        Alamofire.request(route).responseJSON { (request) in
+                
+                guard let items = request.value as? [[String: Any]]
+                    else { return }
+                
+                for item in items {
+                    
+                    guard let object = (try? Card(JSON: item))
+                        else { return }
+                    
+                    objects.append(object)
+                }
+                
+                // Execute callback / closure
+                complete(objects)
+        }
+    }
+    
     public func delete(id: String, complete: @escaping (Int) -> Void) {
         
         let route = self.API_DEFAULT + self.ROUTE_BASE + id
