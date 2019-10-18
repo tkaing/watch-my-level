@@ -34,7 +34,25 @@ class Menu: UIViewController {
     }
     @IBAction func BT_TX_001(_ sender: UIButton) {
         
-        self.redirectTo(from: self, to: Home())
+        let ll = Loading()
+        
+        self.redirectTo(from: self, to: ll)
+        
+        if GameLevel.level < 4 {
+        
+            CardService.default.findByLevel(id: GameLevel.level) { (cards) in
+                
+                let to = GameLevel()
+                
+                to.cards = cards
+                
+                self.redirectTo(from: ll, to: to)
+            }
+            
+        } else {
+            
+            // Page Classement Utilisateurs
+        }
     }
     @IBAction func BT_TX_002(_ sender: UIButton) {
         

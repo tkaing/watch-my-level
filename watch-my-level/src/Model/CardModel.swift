@@ -12,40 +12,33 @@ import ObjectMapper
 public struct Card: ImmutableMappable, Equatable {
     
     var id: Int?
-    var shown: Bool
-    var image: String
+    var url: String
     
     // 1 | Initializer
-    init(id: Int?, shown: Bool, image: String) {
+    init(id: Int?, url: String) {
         self.id = id
-        self.shown = false
-        self.image = image
+        self.url = url
     }
     // 2 | Initializer
-    init(shown: Bool, image: String) {
-        self.shown = false
-        self.image = image
+    init(url: String) {
+        self.url = url
     }
-    
     // 3 | Initializer
     init(id: Int) {
         self.id = id
-        self.shown = false
-        self.image = ""
+        self.url = ""
     }
     
     
     // JSON -> Model
     public init(map: Map) throws {
         self.id = try map.value("id")
-        self.shown = try map.value("shown")
-        self.image = try map.value("image")
+        self.url = try map.value("url")
     }
     
     // Model -> JSON
     public func mapping(map: Map) {
         id >>> (map["id"])
-        shown >>> map["shown"]
-        image >>> map["image"]
+        url >>> map["url"]
     }
 }
