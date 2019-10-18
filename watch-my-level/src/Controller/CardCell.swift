@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CardCell: UICollectionViewCell {
 
@@ -19,7 +20,7 @@ class CardCell: UICollectionViewCell {
         super.awakeFromNib()
     }
 
-    func showCard(_ show: Bool, animted: Bool) {
+    func showCard(_ show: Bool, animted: Bool, url: String = "") {
         
         self.IG_BACK.isHidden = false
         self.IG_FRONT.isHidden = false
@@ -46,9 +47,20 @@ class CardCell: UICollectionViewCell {
             }
         } else {
             if show {
+                
+                Alamofire.request(url).response { (request) in
+                    
+                    guard let data = request.data else { return }
+                    
+                    self.IG_FRONT.image = UIImage(data: data, scale: 1)
+                    self.IG_FRONT.contentMode = .scaleAspectFit
+                }
+                
                 bringSubviewToFront(self.IG_FRONT)
                 self.IG_BACK.isHidden = true
+                
             } else {
+                
                 bringSubviewToFront(self.IG_BACK)
                 self.IG_FRONT.isHidden = true
             }

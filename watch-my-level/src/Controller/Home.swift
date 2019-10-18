@@ -19,6 +19,29 @@ class Home: UIViewController {
         super.viewDidLoad()
         self.initView()
     }
+    
+    @IBAction func BT_GAME(_ sender: UIButton) {
+        
+        let ll = Loading()
+        
+        self.redirectTo(from: self, to: ll)
+        
+        if GameLevel.level < 4 {
+            
+            CardService.default.findByLevel(id: GameLevel.level) { (cards) in
+                
+                let to = GameLevel()
+                
+                to.cards = cards
+                
+                self.redirectTo(from: ll, to: to)
+            }
+            
+        } else {
+            
+            // Page Classement Utilisateurs
+        }
+    }
 }
 
 // Menu Extension
