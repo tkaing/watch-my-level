@@ -11,7 +11,6 @@ import SideMenu
 
 class Catalogue: UIViewController {
     
-    
     @IBOutlet var table: UITableView!
     
     public var items: [String] = ["a","b","c"]
@@ -19,17 +18,26 @@ class Catalogue: UIViewController {
     public var cellID = "PRODUCT_CELL_ID"
     
     override func viewDidLoad() {
+        
         self.table.delegate = self
         self.table.dataSource = self
         self.table.register(UINib(nibName: "CatalogueTableViewCell", bundle: nil), forCellReuseIdentifier: self.cellID)
+        
         super.viewDidLoad()
+        self.initAll()
+    }
+}
+
+// Default Extension
+extension Catalogue {
+    
+    func initAll() {
+        
         self.initPanel()
     }
 }
 
-
-
-// Menu Catalogue
+// Menu Extension
 extension Catalogue {
     
     func initPanel() {
@@ -41,25 +49,23 @@ extension Catalogue {
         BT.addTarget(self, action: #selector(openPanel), for: .touchUpInside)
     }
     
-    @objc func openPanel() {
-        
-        let view: UIViewController = SideMenuManager.default.menuLeftNavigationController!
-        
-        present(view, animated: true, completion: nil)
-    }
-    
     func redirectTo(from: UIViewController, to: UIViewController) {
         
         let mm = MenuManager()
         
         mm.redirectTo(from: from, to: to)
     }
-}
-
-
-extension Catalogue: UITableViewDelegate {
     
+    @objc func openPanel() {
+        
+        let view: UIViewController = SideMenuManager.default.menuLeftNavigationController!
+        
+        present(view, animated: true, completion: nil)
+    }
 }
+
+
+extension Catalogue: UITableViewDelegate {}
 
 extension Catalogue: UITableViewDataSource {
     
