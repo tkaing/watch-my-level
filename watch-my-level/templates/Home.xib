@@ -10,9 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Home" customModule="watch_my_level" customModuleProvider="target">
             <connections>
-                <outlet property="BT_IC_LEFT" destination="xYq-BA-0rN" id="0jY-ms-QVb"/>
-                <outlet property="BT_IC_RIGHT" destination="K7B-Nh-HVN" id="aAM-9f-o0B"/>
-                <outlet property="TX_DESCRIPTION" destination="LVX-hj-4xy" id="NSX-7m-tGD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -52,117 +49,75 @@
                     <state key="normal" title="Button" image="dot"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEF-OV-ZMs">
-                    <rect key="frame" x="109" y="404" width="196" height="42"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <rect key="frame" x="133" y="384" width="148" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" title="Cliquez pour jouer"/>
                     <connections>
                         <action selector="BT_GAME:" destination="-1" eventType="touchUpInside" id="ROF-Te-Qad"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efr-aP-heJ">
-                    <rect key="frame" x="157" y="451" width="100" height="100"/>
+                    <rect key="frame" x="157" y="423" width="100" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="2Se-s0-Prl"/>
                         <constraint firstAttribute="width" constant="100" id="Xl5-Gs-oGU"/>
                     </constraints>
                     <state key="normal" title="Button" image="game-1"/>
                 </button>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="LVX-hj-4xy">
-                    <rect key="frame" x="20" y="707" width="374" height="150"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHd-ge-sc7">
+                    <rect key="frame" x="172" y="597" width="70" height="60"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="150" id="ew2-Lh-y5Q"/>
-                    </constraints>
-                    <string key="text">Samir Khemici est le fondateur d'Objectif Horlogerie, premier centre de formation et d'initiation à l'horlogerie en France. L'objectif? Comprendre comment fonctionne une montre mécanique par la pratique et en seulement une demi-journée. En 2017 il crée OH Selection Paris, un portail de e-commerce proposant des produits accesoires de l'univers horloger. Tous les produits sont testés et approuvés. Lire plus sur notre page "About Us"...</string>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Augarde" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpB-6f-SlF">
-                    <rect key="frame" x="100" y="686" width="214" height="21"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYq-BA-0rN">
-                    <rect key="frame" x="20" y="44" width="60" height="300"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="300" id="RjO-ZB-ZIp"/>
-                        <constraint firstAttribute="width" constant="60" id="t6C-bL-5na"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="45"/>
-                    <state key="normal" title="«"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7B-Nh-HVN">
-                    <rect key="frame" x="334" y="44" width="60" height="300"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="60" id="gi9-CG-bU1"/>
-                        <constraint firstAttribute="height" constant="300" id="lTJ-0v-cXg"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="45"/>
-                    <state key="normal" title="»"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHd-ge-sc7">
-                    <rect key="frame" x="172" y="591" width="70" height="60"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="70" id="QIv-bR-d9o"/>
-                        <constraint firstAttribute="height" constant="60" id="hWp-aT-Vd8"/>
+                        <constraint firstAttribute="width" constant="70" id="Cl9-8e-G0c"/>
+                        <constraint firstAttribute="height" constant="60" id="Lld-8k-ry0"/>
                     </constraints>
                     <state key="normal" image="montre-3">
                         <attributedString key="attributedTitle"/>
                     </state>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consulter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqf-ds-PEI">
-                    <rect key="frame" x="93" y="566" width="74" height="60"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hn-cx-gMM">
+                    <rect key="frame" x="116.5" y="553" width="181" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Consulter le catalogue"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zP0-mS-9pe">
+                    <rect key="frame" x="153" y="687" width="108" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Se connecter"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1U-61-wWc">
+                    <rect key="frame" x="157" y="731" width="100" height="100"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="kCk-pP-wb9"/>
+                        <constraint firstAttribute="width" constant="100" id="CZH-jr-g97"/>
+                        <constraint firstAttribute="height" constant="100" id="vVt-cD-Dhc"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catalogue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDA-5H-k67">
-                    <rect key="frame" x="247" y="566" width="78" height="60"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="60" id="Ed8-Bj-BkE"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Login" image="login"/>
+                    <connections>
+                        <action selector="BT_IC_LOGIN:" destination="-1" eventType="touchUpInside" id="GPp-Hv-Ewe"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="A3g-Ek-hhu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1t6-aV-hGB"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="K7B-Nh-HVN" secondAttribute="trailing" constant="20" id="3cB-9G-EfS"/>
                 <constraint firstItem="efr-aP-heJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="64x-o8-VGW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kpB-6f-SlF" secondAttribute="trailing" constant="100" id="9hp-HU-G1L"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LVX-hj-4xy" secondAttribute="trailing" constant="20" id="DRL-Xm-Ldk"/>
-                <constraint firstItem="LVX-hj-4xy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FW0-KN-75k"/>
-                <constraint firstItem="LVX-hj-4xy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="IWr-Rn-5et"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LVX-hj-4xy" secondAttribute="bottom" constant="5" id="Juh-62-KUP"/>
-                <constraint firstItem="xYq-BA-0rN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KwQ-UU-efM"/>
+                <constraint firstItem="5Hn-cx-gMM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="I0G-3y-FCa"/>
+                <constraint firstItem="vHd-ge-sc7" firstAttribute="top" secondItem="5Hn-cx-gMM" secondAttribute="bottom" constant="10" id="IEI-8x-7ij"/>
                 <constraint firstItem="Z53-45-C3i" firstAttribute="top" secondItem="0z7-v5-s8n" secondAttribute="bottom" constant="10" id="MSF-AB-zgf"/>
-                <constraint firstItem="Xqf-ds-PEI" firstAttribute="top" secondItem="efr-aP-heJ" secondAttribute="bottom" constant="15" id="PRO-0o-7iP"/>
-                <constraint firstItem="vHd-ge-sc7" firstAttribute="leading" secondItem="Xqf-ds-PEI" secondAttribute="trailing" constant="5" id="PUG-YT-Cv0"/>
                 <constraint firstItem="Z53-45-C3i" firstAttribute="leading" secondItem="A3g-Ek-hhu" secondAttribute="trailing" constant="10" id="RdE-cs-czX"/>
-                <constraint firstItem="K7B-Nh-HVN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="UIT-SH-Sew"/>
                 <constraint firstItem="A3g-Ek-hhu" firstAttribute="leading" secondItem="xoA-6i-oOt" secondAttribute="trailing" constant="10" id="WiW-jz-r0h"/>
                 <constraint firstItem="0z7-v5-s8n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bCF-9w-o7D"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0z7-v5-s8n" secondAttribute="trailing" id="c90-kT-Et0"/>
-                <constraint firstItem="kpB-6f-SlF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="eOL-Pp-606"/>
-                <constraint firstItem="hEF-OV-ZMs" firstAttribute="top" secondItem="A3g-Ek-hhu" secondAttribute="bottom" constant="30" id="eQH-fI-SOo"/>
+                <constraint firstItem="zP0-mS-9pe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dqj-3Q-Ru2"/>
+                <constraint firstItem="hEF-OV-ZMs" firstAttribute="top" secondItem="A3g-Ek-hhu" secondAttribute="bottom" constant="10" id="eQH-fI-SOo"/>
                 <constraint firstItem="xoA-6i-oOt" firstAttribute="top" secondItem="0z7-v5-s8n" secondAttribute="bottom" constant="10" id="er7-Jf-AGZ"/>
                 <constraint firstItem="0z7-v5-s8n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="i1p-rT-JuY"/>
-                <constraint firstItem="WDA-5H-k67" firstAttribute="leading" secondItem="vHd-ge-sc7" secondAttribute="trailing" constant="5" id="kCH-z8-Q9j"/>
-                <constraint firstItem="WDA-5H-k67" firstAttribute="top" secondItem="efr-aP-heJ" secondAttribute="bottom" constant="15" id="luh-en-0x4"/>
-                <constraint firstItem="kpB-6f-SlF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="maj-eI-vIQ"/>
                 <constraint firstItem="hEF-OV-ZMs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mdr-5I-eKK"/>
-                <constraint firstItem="vHd-ge-sc7" firstAttribute="top" secondItem="efr-aP-heJ" secondAttribute="bottom" constant="20" id="moh-j1-W3y"/>
                 <constraint firstItem="0z7-v5-s8n" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="olg-3U-q4R"/>
-                <constraint firstItem="vHd-ge-sc7" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="pTT-Qz-cid"/>
-                <constraint firstItem="LVX-hj-4xy" firstAttribute="top" secondItem="kpB-6f-SlF" secondAttribute="bottom" id="rOw-LZ-UOI"/>
-                <constraint firstItem="xYq-BA-0rN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="s8n-nK-hmK"/>
+                <constraint firstItem="D1U-61-wWc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pF8-37-Tc7"/>
+                <constraint firstItem="zP0-mS-9pe" firstAttribute="top" secondItem="vHd-ge-sc7" secondAttribute="bottom" constant="30" id="ptl-3R-o23"/>
+                <constraint firstItem="D1U-61-wWc" firstAttribute="top" secondItem="zP0-mS-9pe" secondAttribute="bottom" constant="10" id="soW-XV-wpQ"/>
+                <constraint firstItem="5Hn-cx-gMM" firstAttribute="top" secondItem="efr-aP-heJ" secondAttribute="bottom" constant="30" id="uZ1-4D-evR"/>
                 <constraint firstItem="vHd-ge-sc7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vRo-4x-DGl"/>
                 <constraint firstItem="A3g-Ek-hhu" firstAttribute="top" secondItem="0z7-v5-s8n" secondAttribute="bottom" constant="10" id="wha-tP-LiU"/>
                 <constraint firstItem="efr-aP-heJ" firstAttribute="top" secondItem="hEF-OV-ZMs" secondAttribute="bottom" constant="5" id="z0l-JG-1kA"/>
@@ -174,6 +129,7 @@
     <resources>
         <image name="dot" width="512" height="512"/>
         <image name="game-1" width="600" height="600"/>
+        <image name="login" width="512" height="512"/>
         <image name="montre-3" width="512" height="512"/>
         <image name="puzzle_1" width="1280" height="972"/>
     </resources>

@@ -41,6 +41,8 @@
 		8FDFADAC2358DEC20031BB31 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDFADAA2358DEC20031BB31 /* About.xib */; };
 		8FDFADAF2358E5740031BB31 /* CatalogueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDFADAD2358E5740031BB31 /* CatalogueTableViewCell.swift */; };
 		8FDFADB02358E5740031BB31 /* CatalogueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDFADAE2358E5740031BB31 /* CatalogueTableViewCell.xib */; };
+		8FDFADB52359AA5B0031BB31 /* CatalogueProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDFADB32359AA5B0031BB31 /* CatalogueProductDetail.swift */; };
+		8FDFADB62359AA5B0031BB31 /* CatalogueProductDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDFADB42359AA5B0031BB31 /* CatalogueProductDetail.xib */; };
 		8FE50E4823575FA300E8A049 /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE50E4623575FA300E8A049 /* GameInfo.swift */; };
 		8FE50E4923575FA300E8A049 /* GameInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE50E4723575FA300E8A049 /* GameInfo.xib */; };
 		8FE50E4C23575FBC00E8A049 /* GameLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE50E4A23575FBC00E8A049 /* GameLevel.swift */; };
@@ -89,6 +91,8 @@
 		8FDFADAA2358DEC20031BB31 /* About.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
 		8FDFADAD2358E5740031BB31 /* CatalogueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueTableViewCell.swift; sourceTree = "<group>"; };
 		8FDFADAE2358E5740031BB31 /* CatalogueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogueTableViewCell.xib; sourceTree = "<group>"; };
+		8FDFADB32359AA5B0031BB31 /* CatalogueProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueProductDetail.swift; sourceTree = "<group>"; };
+		8FDFADB42359AA5B0031BB31 /* CatalogueProductDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogueProductDetail.xib; sourceTree = "<group>"; };
 		8FE50E4623575FA300E8A049 /* GameInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
 		8FE50E4723575FA300E8A049 /* GameInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameInfo.xib; sourceTree = "<group>"; };
 		8FE50E4A23575FBC00E8A049 /* GameLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLevel.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 				8F8D00EC2357B840001C39E9 /* Catalogue.xib */,
 				8FDFADAA2358DEC20031BB31 /* About.xib */,
 				8FDFADAE2358E5740031BB31 /* CatalogueTableViewCell.xib */,
+				8FDFADB42359AA5B0031BB31 /* CatalogueProductDetail.xib */,
 			);
 			path = templates;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 		3FB5FAAA2356E9D400D6FE7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8FDFADB32359AA5B0031BB31 /* CatalogueProductDetail.swift */,
 				8FDFADAD2358E5740031BB31 /* CatalogueTableViewCell.swift */,
 				8FDFADA92358DEC20031BB31 /* About.swift */,
 				8F8D00EB2357B840001C39E9 /* Catalogue.swift */,
@@ -307,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FDFADB62359AA5B0031BB31 /* CatalogueProductDetail.xib in Resources */,
 				8FE50E4D23575FBC00E8A049 /* GameLevel.xib in Resources */,
 				3FBDA2D72356E69D00D16992 /* LaunchScreen.storyboard in Resources */,
 				8FE50E4923575FA300E8A049 /* GameInfo.xib in Resources */,
@@ -397,6 +404,7 @@
 				3FB5FABE2357520A00D6FE7D /* ColorManager.swift in Sources */,
 				8F8D00ED2357B840001C39E9 /* Catalogue.swift in Sources */,
 				8FDFADAF2358E5740031BB31 /* CatalogueTableViewCell.swift in Sources */,
+				8FDFADB52359AA5B0031BB31 /* CatalogueProductDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

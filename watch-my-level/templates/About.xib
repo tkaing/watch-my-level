@@ -32,7 +32,7 @@
                     </constraints>
                 </imageView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Wsd-bb-fXQ">
-                    <rect key="frame" x="75" y="354" width="264" height="237"/>
+                    <rect key="frame" x="75" y="329" width="264" height="262"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <string key="text">Samir Khemici est le fondateur d'Objectif Horlogerie, premier centre de formation et d'initiation à l'horlogerie en France. L'objectif? Comprendre comment fonctionne une montre mécanique par la pratique et en seulement une demi-journée. En 2017 il crée OH Selection Paris, un portail de e-commerce proposant des produits accesoires de l'univers horloger. Tous les produits sont testés et approuvés.</string>
                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -49,7 +49,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="iwO-iL-Ugy" firstAttribute="bottom" secondItem="Wsd-bb-fXQ" secondAttribute="bottom" constant="271" id="0PT-PA-qaM"/>
-                <constraint firstItem="Wsd-bb-fXQ" firstAttribute="top" secondItem="cmj-ql-IXQ" secondAttribute="bottom" constant="30" id="1Cv-7E-0PZ"/>
+                <constraint firstItem="Wsd-bb-fXQ" firstAttribute="top" secondItem="cmj-ql-IXQ" secondAttribute="bottom" constant="5" id="1Cv-7E-0PZ"/>
                 <constraint firstItem="Mrd-0N-t6u" firstAttribute="centerX" secondItem="cmj-ql-IXQ" secondAttribute="centerX" id="5Z8-Yt-KFO"/>
                 <constraint firstItem="Mrd-0N-t6u" firstAttribute="leading" secondItem="iwO-iL-Ugy" secondAttribute="leading" constant="75" id="A1S-lo-87d"/>
                 <constraint firstItem="lPj-A3-dDu" firstAttribute="bottom" secondItem="iwO-iL-Ugy" secondAttribute="bottom" id="MLh-b3-9eb"/>

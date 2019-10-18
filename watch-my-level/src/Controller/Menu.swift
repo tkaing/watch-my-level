@@ -15,7 +15,7 @@ class Menu: UIViewController {
     @IBOutlet var BT_IC_001: UIButton!
     @IBOutlet var BT_IC_002: UIButton!
     @IBOutlet var BT_IC_003: UIButton!
-    @IBOutlet var BT_IC_004: UIButton!
+    //@IBOutlet var BT_IC_004: UIButton!
     @IBOutlet var BT_IC_005: UIButton!
     
     override func viewDidLoad() {
@@ -76,12 +76,12 @@ class Menu: UIViewController {
             self.redirectTo(from: lo, to: About())
         }
     }
-    @IBAction func BT_TX_004(_ sender: UIButton) {
+    /*@IBAction func BT_TX_004(_ sender: UIButton) {
         
         ActiveManager.activeUser = nil
         
         self.redirectTo(from: self, to: Home())
-    }
+    }*/
     @IBAction func BT_TX_CAT(_ sender: UIButton) {
         
         let lo = Loading()
@@ -119,7 +119,7 @@ extension Menu {
         self.setImage(BT: self.BT_IC_001)
         self.setImage(BT: self.BT_IC_002)
         self.setImage(BT: self.BT_IC_003)
-        self.setImage(BT: self.BT_IC_004)
+        //self.setImage(BT: self.BT_IC_004)
         self.setImage(BT: self.BT_IC_005)
     }
     
